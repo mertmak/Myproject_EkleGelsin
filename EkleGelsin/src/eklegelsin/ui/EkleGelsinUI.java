@@ -17,14 +17,14 @@ public class EkleGelsinUI implements UI {
     private final SiparisServisi siparisServisi;
     private final Sepet sepet;
 
-    // ... (Constructor ve diğer metotlar aynı kalıyor) ...
+
     public EkleGelsinUI() {
         this.veriServisi = new VeriServisi();
         this.siparisServisi = new SiparisServisi();
         this.sepet = Sepet.getInstance();
     }
     
-    // ... run(), resetToMainMenu(), showShops() metotları aynı kalıyor ...
+   
     
     @Override
     public void run() {
@@ -91,9 +91,7 @@ public class EkleGelsinUI implements UI {
         shopFrame.setVisible(true);
     }
 
-    // #######################################################
-    // ###          DEĞİŞİKLİK BU METOT İÇERİSİNDE         ###
-    // #######################################################
+  
     @Override
     public void showMenu(JFrame shopFrame, JFrame mainFrame, Dukkan dukkan) {
         shopFrame.setVisible(false);
@@ -107,7 +105,7 @@ public class EkleGelsinUI implements UI {
         for (Yemek yemek : dukkan.getMenu()) {
             JButton button = new JButton(yemek.getAd() + " - " + String.format("%.2f₺", yemek.getFiyat()));
             
-            // YENİ MANTIK BURADA
+
             button.addActionListener(e -> {
                 if (yemek.isDrink()) {
                     // Eğer ürün içecekse, doğrudan sepete ekle
@@ -137,7 +135,7 @@ public class EkleGelsinUI implements UI {
         menuFrame.setVisible(true);
     }
     
-    // ... (Geri kalan tüm metotlar aynı kalıyor) ...
+
     @Override
     public void showCustomizeMenu(JFrame menuFrame, Yemek orjinalYemek) {
         JDialog customizeDialog = new JDialog(menuFrame, orjinalYemek.getAd() + " Özelleştirme", true);

@@ -47,7 +47,7 @@ public class SiparisServisi {
 
         timer.schedule(new TimerTask() {
             @Override
-            public void run() { // <-- HATA BURADAYDI, 'void' EKLENDİ
+            public void run() { 
                 SwingUtilities.invokeLater(() -> {
                     statusLabel.setText("Sipariş teslim edildi! Afiyet olsun!");
                     // 3 saniye sonra pencereyi kapat ve ana menüye dön
