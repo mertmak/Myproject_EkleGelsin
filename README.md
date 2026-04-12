@@ -50,7 +50,7 @@ To run this project on your local machine, follow the steps below.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/your-username/your-project-name.git](https://github.com/your-username/your-project-name.git)
+    git clone https://github.com/mertmak/Myproject_EkleGelsin
     ```
 
 2.  **Navigate to the Directory:**
