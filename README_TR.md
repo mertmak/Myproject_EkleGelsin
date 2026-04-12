@@ -47,7 +47,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebi
 
 1.  **Projeyi Klonlayın:**
     ```bash
-    git clone [https://github.com/kullanici-adiniz/proje-adiniz.git](https://github.com/kullanici-adiniz/proje-adiniz.git)
+    git clone https://github.com/mertmak/Myproject_EkleGelsin
     ```
 
 2.  **Dizine Gidin:**
