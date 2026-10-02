@@ -55,7 +55,7 @@ To run this project on your local machine, follow the steps below.
 
 2.  **Navigate to the Directory:**
     ```bash
-    cd your-project-name
+    cd Myproject_EkleGelsin/EkleGelsin
     ```
 
 3.  **Compile & Run (Via Terminal):**
@@ -65,7 +65,7 @@ To run this project on your local machine, follow the steps below.
     mkdir bin
 
     # Compile all java files into the 'bin' directory
-    javac -d bin src/eklegelsin/**/*.java
+    javac -d bin $(find src -name '*.java')
 
     # Run the main class
     java -cp bin eklegelsin.main.EkleGelsin

@@ -52,7 +52,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebi
 
 2.  **Dizine Gidin:**
     ```bash
-    cd proje-adiniz
+    cd Myproject_EkleGelsin/EkleGelsin
     ```
 
 3.  **Derleme ve Çalıştırma (Terminal Üzerinden):**
@@ -62,7 +62,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebi
     mkdir bin
 
     # Tüm java dosyalarını derleyip 'bin' klasörüne atın
-    javac -d bin src/eklegelsin/**/*.java
+    javac -d bin $(find src -name '*.java')
 
     # Ana sınıfı çalıştırın
     java -cp bin eklegelsin.main.EkleGelsin
