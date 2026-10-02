@@ -6,6 +6,9 @@
 
 This project is the refactored version of an initial procedural code, restructured according to Object-Oriented Programming (OOP) principles. This refactoring significantly improves the code's readability, maintainability, and scalability.
 
+> **🚧 Rewrite in progress.** Ekle Gelsin is being rebuilt from scratch with Java Swing. The sections below describe the original Swing version, which lives in the `EkleGelsin/` folder and under the `v1-swing` tag. See the [roadmap](docs/YOL_HARITASI.md) (Turkish).
+
+
 ## ✨ Features
 
 - **Food Category Selection:** Choose from categories like doner, pizza, or burger from the main menu.
@@ -23,7 +26,7 @@ This project is the refactored version of an initial procedural code, restructur
 
 - **Language:** Java
 - **UI Framework:** Java Swing
-- **IDE:** IntelliJ IDEA / Eclipse / VS Code
+- **Build:** Maven (via the included Maven Wrapper)
 
 ## 📂 Project Architecture
 
@@ -40,40 +43,32 @@ The project is divided into logical layers based on the Single Responsibility Pr
 
 ## 🚀 Installation and Usage
 
-To run this project on your local machine, follow the steps below.
-
 ### Prerequisites
 
-- Java Development Kit (JDK) 11 or newer.
+- JDK 25 or newer. Maven does not need to be installed; the included wrapper (`mvnw`) downloads it on first use.
 
 ### Steps
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone https://github.com/mertmak/Myproject_EkleGelsin
-    ```
+```bash
+git clone https://github.com/mertmak/Myproject_EkleGelsin
+cd Myproject_EkleGelsin
 
-2.  **Navigate to the Directory:**
-    ```bash
-    cd Myproject_EkleGelsin/EkleGelsin
-    ```
+# Run the app
+./mvnw compile exec:exec
 
-3.  **Compile & Run (Via Terminal):**
-    *Assuming all your `.java` files are under a `src` folder:*
-    ```bash
-    # Create a 'bin' directory for the compiled class files
-    mkdir bin
+# Build and run the tests
+./mvnw verify
+```
 
-    # Compile all java files into the 'bin' directory
-    javac -d bin $(find src -name '*.java')
+On Windows, use `mvnw.cmd` instead of `./mvnw`.
 
-    # Run the main class
-    java -cp bin eklegelsin.main.EkleGelsin
-    ```
+### Running the original Swing version
 
-4.  **Run (Via IDE):**
-    - Open the project in your favorite IDE (IntelliJ, Eclipse, etc.).
-    - Locate and run the `EkleGelsin.java` file in the `eklegelsin.main` package.
+```bash
+cd EkleGelsin
+javac -d bin $(find src -name '*.java')
+java -cp bin eklegelsin.main.EkleGelsin
+```
 
 ## 👥 Contributors
 

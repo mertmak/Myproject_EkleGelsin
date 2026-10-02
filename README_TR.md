@@ -4,6 +4,9 @@
 
 Bu proje, başlangıçta tek bir dosyada bulunan prosedürel kodun, Nesne Yönelimli Programlama (OOP) prensiplerine uygun olarak yeniden yapılandırılmış halidir. Bu sayede kodun okunabilirliği, sürdürülebilirliği ve genişletilebilirliği artırılmıştır.
 
+> **🚧 Yeniden yazım sürüyor.** Ekle Gelsin, Java Swing ile sıfırdan yeniden yazılıyor. Aşağıdaki bölümler orijinal Swing sürümünü anlatır; bu sürüm `EkleGelsin/` klasöründe ve `v1-swing` etiketinde duruyor. Ayrıntılar için [yol haritası](docs/YOL_HARITASI.md).
+
+
 ## ✨ Özellikler
 
 - **Yemek Türü Seçimi:** Ana menüden döner, pizza veya burger gibi kategoriler seçebilme.
@@ -20,7 +23,7 @@ Bu proje, başlangıçta tek bir dosyada bulunan prosedürel kodun, Nesne Yönel
 
 - **Dil:** Java
 - **Arayüz:** Java Swing
-- **IDE:** IntelliJ IDEA / Eclipse / VS Code
+- **Build:** Maven (projeyle gelen Maven Wrapper ile)
 
 ## 📂 Proje Mimarisi
 
@@ -37,40 +40,32 @@ Proje, Tek Sorumluluk Prensibi (Single Responsibility Principle) göz önünde b
 
 ## 🚀 Kurulum ve Çalıştırma
 
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebilirsiniz.
-
 ### Gereksinimler
 
-- Java Development Kit (JDK) 11 veya daha yeni bir sürüm.
+- JDK 25 veya daha yeni bir sürüm. Maven kurmanıza gerek yok; projeyle gelen `mvnw` betiği ilk çalıştırmada Maven'ı kendisi indirir.
 
 ### Adımlar
 
-1.  **Projeyi Klonlayın:**
-    ```bash
-    git clone https://github.com/mertmak/Myproject_EkleGelsin
-    ```
+```bash
+git clone https://github.com/mertmak/Myproject_EkleGelsin
+cd Myproject_EkleGelsin
 
-2.  **Dizine Gidin:**
-    ```bash
-    cd Myproject_EkleGelsin/EkleGelsin
-    ```
+# Uygulamayı çalıştır
+./mvnw compile exec:exec
 
-3.  **Derleme ve Çalıştırma (Terminal Üzerinden):**
-    *Tüm `.java` dosyalarınızın `src` klasörü altında olduğunu varsayarsak:*
-    ```bash
-    # Class dosyaları için bir 'bin' klasörü oluşturun
-    mkdir bin
+# Derle ve testleri çalıştır
+./mvnw verify
+```
 
-    # Tüm java dosyalarını derleyip 'bin' klasörüne atın
-    javac -d bin $(find src -name '*.java')
+Windows'ta `./mvnw` yerine `mvnw.cmd` kullanın.
 
-    # Ana sınıfı çalıştırın
-    java -cp bin eklegelsin.main.EkleGelsin
-    ```
+### Orijinal Swing sürümünü çalıştırma
 
-4.  **Çalıştırma (IDE Üzerinden):**
-    - Projeyi tercih ettiğiniz bir IDE'de (IntelliJ, Eclipse vb.) açın.
-    - `eklegelsin.main` paketindeki `EkleGelsin.java` dosyasını bulun ve çalıştırın.
+```bash
+cd EkleGelsin
+javac -d bin $(find src -name '*.java')
+java -cp bin eklegelsin.main.EkleGelsin
+```
 
 ## 👥 Geliştiriciler
 
