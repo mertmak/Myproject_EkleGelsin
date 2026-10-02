@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" styleClass="kok">
+    <top>
+        <HBox styleClass="ust-bar">
+            <Label text="Ekle Gelsin" styleClass="logo"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox styleClass="bos-durum">
+            <Label text="Yeni Ekle Gelsin yapım aşamasında" styleClass="bos-durum-baslik"/>
+            <Label text="Restoranlar ve menüler yakında burada olacak." styleClass="bos-durum-aciklama"/>
+        </VBox>
+    </center>
+</BorderPane>

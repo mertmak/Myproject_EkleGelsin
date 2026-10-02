@@ -1,0 +1,43 @@
+/* Ekle Gelsin tasarım sistemi. Renkler ve ölçüler yalnızca burada tanımlanır. */
+.root {
+    -renk-marka: #e8461e;
+    -renk-zemin: #f7f5f2;
+    -renk-yuzey: #ffffff;
+    -renk-metin: #1f1b18;
+    -renk-metin-ikincil: #6b635c;
+    -renk-cizgi: #e6e1db;
+
+    -fx-font-size: 14px;
+    -fx-text-fill: -renk-metin;
+}
+
+.kok {
+    -fx-background-color: -renk-zemin;
+}
+
+.ust-bar {
+    -fx-alignment: center-left;
+    -fx-padding: 16 32;
+    -fx-background-color: -renk-yuzey;
+    -fx-border-color: transparent transparent -renk-cizgi transparent;
+}
+
+.logo {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -renk-marka;
+}
+
+.bos-durum {
+    -fx-alignment: center;
+    -fx-spacing: 8;
+}
+
+.bos-durum-baslik {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.bos-durum-aciklama {
+    -fx-text-fill: -renk-metin-ikincil;
+}
