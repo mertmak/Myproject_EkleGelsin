@@ -48,12 +48,12 @@ Eski kod düzeltilmeyecek, yerine yenisi yazılacak. Eski koddaki hatalar (H1–
 
 **Bitti sayılır:** `./mvnw verify` CI'da yeşil, `./mvnw compile exec:exec` boş ana pencereyi açıyor.
 
-## Faz 1 — Domain modeli ve iş kuralları · *M*
+## Faz 1 — Domain modeli ve iş kuralları · *M* · ✅ Tamamlandı
 
 Arayüzden tamamen bağımsız, baştan testli çekirdek.
 
-- [ ] **Para:** `BigDecimal` tabanlı `Para` sınıfı. Tüm biçimlendirme `tr-TR` ile tek yerden yapılsın (`₺150,00`) (H6, H7).
-- [ ] **Model:**
+- [x] **Para:** `BigDecimal` tabanlı `Para` sınıfı. Tüm biçimlendirme `tr-TR` ile tek yerden yapılsın (`₺150,00`) (H6, H7).
+- [x] **Model:**
   - `Kategori`
   - `Restoran`: ad, logo, kapak görseli, puan, tahmini süre, minimum sepet tutarı, teslimat ücreti, çalışma saatleri
   - `Urun`: ad, açıklama, görsel, fiyat, menü bölümü (ör. "Dönerler", "İçecekler")
@@ -61,11 +61,13 @@ Arayüzden tamamen bağımsız, baştan testli çekirdek.
   - `SepetKalemi`: ürün, seçimler, adet
   - `Adres`
   - `Siparis`: numara, restoran, kalemler, adres, ödeme yöntemi, tutarlar, zaman damgaları
-- [ ] **Sepet servisi:** sepet tek bir restorana bağlı. Başka restorandan ürün eklenince "sepet temizlensin mi?" kararı istenir (H3). Aynı ürün ve aynı seçimler tekrar eklenince adet artar. Ara toplam, teslimat ücreti ve minimum tutar kontrolü burada yapılır.
-- [ ] **Ödeme doğrulama (simülasyon):** boşluk temizleme, Luhn kontrolü, 13–19 hane, Amex için 4 haneli CVV. Son kullanma tarihi `YearMonth` ile kontrol edilir (H1, H4). Sonuç arayüze bağımlı olmayan bir doğrulama sonucu nesnesi olarak dönülür (H8).
-- [ ] **Sipariş durumu zamana bağlı hesaplansın:** durum, sipariş anından geçen süreye göre bulunur (alındı → hazırlanıyor → yolda → teslim edildi). Uygulama kapatılıp açılsa da takip doğru yerden devam eder; zamanlayıcıya bağımlı değildir.
+- [x] **Sepet servisi:** sepet tek bir restorana bağlı. Başka restorandan ürün eklenince "sepet temizlensin mi?" kararı istenir (H3). Aynı ürün ve aynı seçimler tekrar eklenince adet artar. Ara toplam, teslimat ücreti ve minimum tutar kontrolü burada yapılır.
+- [x] **Ödeme doğrulama (simülasyon):** boşluk temizleme, Luhn kontrolü, 13–19 hane, Amex için 4 haneli CVV. Son kullanma tarihi `YearMonth` ile kontrol edilir (H1, H4). Sonuç arayüze bağımlı olmayan bir doğrulama sonucu nesnesi olarak dönülür (H8).
+- [x] **Sipariş durumu zamana bağlı hesaplansın:** durum, sipariş anından geçen süreye göre bulunur (alındı → hazırlanıyor → yolda → teslim edildi). Uygulama kapatılıp açılsa da takip doğru yerden devam eder; zamanlayıcıya bağımlı değildir.
 
 **Bitti sayılır:** model ve servis katmanında %80+ test kapsamı. H1, H3, H4, H6, H7, H8 için yazılan testler geçiyor.
+
+**Sonuç:** 63 test, %98 satır kapsamı (servis katmanı %100). Kapsam JaCoCo ile ölçülüyor; %80'in altına düşerse `./mvnw verify` başarısız oluyor. Testler, adında ilgili hata kodunu taşıyor (ör. `H1_buAySonunaKadarGecerliKartKabulEdilir`).
 
 ## Faz 2 — Gerçekçi katalog · *M*
 
@@ -144,14 +146,14 @@ Tek pencere (`JFrame`). Ekranlar bu pencerenin içinde `CardLayout` ile değişi
 
 | Hata | Yeni tasarımda nasıl önleniyor | Faz |
 |------|-------------------------------|-----|
-| H1 Bu ay geçerli kart reddi | `YearMonth` ile ay sonuna kadar geçerlilik + test | 1 |
+| H1 Bu ay geçerli kart reddi | `YearMonth` ile ay sonuna kadar geçerlilik + test ✅ | 1 |
 | H2 Pencere sızıntısı | Tek pencere, ekranlar içeride değişiyor | 4 |
-| H3 Restoranlar arası karışık sepet | Sepet tek restorana bağlı | 1 |
-| H4 Kart numarası kontrolü | Boşluk temizleme, Luhn, Amex desteği | 1 |
+| H3 Restoranlar arası karışık sepet | Sepet tek restorana bağlı ✅ | 1 |
+| H4 Kart numarası kontrolü | Boşluk temizleme, Luhn, Amex desteği ✅ | 1 |
 | H5 Arayüz yanlış thread'de | `SwingUtilities.invokeLater` + `AnaPanel` EDT dışında oluşturulamaz ✅ | 0 |
-| H6 Çift boşluk | Ürün adı ve seçimler ayrı alanlarda gösteriliyor | 1 / 4 |
-| H7 Sistem diline bağlı fiyat | `Para` sınıfı, sabit `tr-TR` biçimi | 1 |
-| H8 Servis içinde dialog | Servis doğrulama sonucu döner, mesajı arayüz gösterir | 1 |
+| H6 Çift boşluk | Ürün adı ve seçimler ayrı alanlarda gösteriliyor (model ✅, arayüz Faz 4) | 1 / 4 |
+| H7 Sistem diline bağlı fiyat | `Para` sınıfı, sabit `tr-TR` biçimi ✅ | 1 |
+| H8 Servis içinde dialog | Servis doğrulama sonucu döner, mesajı arayüz gösterir ✅ | 1 |
 
 ## Sıra özeti
 
