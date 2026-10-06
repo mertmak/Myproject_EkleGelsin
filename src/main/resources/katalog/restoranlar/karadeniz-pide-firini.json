@@ -1,0 +1,48 @@
+{
+  "id": "karadeniz-pide-firini",
+  "ad": "Karadeniz Pide Fırını",
+  "kategori": "lahmacun-pide",
+  "tanitim": "Kayık pide, köy tereyağı ve Trabzon usulü bol malzemeyle.",
+  "logo": "logolar/karadeniz-pide-firini.png",
+  "kapak": "kapaklar/karadeniz-pide-firini.jpg",
+  "puan": 4.5,
+  "teslimatSuresi": { "enAz": 30, "enCok": 45 },
+  "minimumSepet": 300,
+  "teslimatUcreti": 24.90,
+  "calismaSaatleri": { "acilis": "09:00", "kapanis": "23:00" },
+  "secenekGruplari": [
+    { "id": "boy", "ad": "Boy", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "normal", "ad": "Normal" },
+      { "id": "buyuk", "ad": "Büyük (1,5 kat)", "ekFiyat": 140 }
+    ] },
+    { "id": "ekstra", "ad": "Ekstralar", "enAz": 0, "enCok": 3, "secenekler": [
+      { "id": "yumurta", "ad": "Yumurta", "ekFiyat": 25 },
+      { "id": "kasar", "ad": "Ekstra kaşar", "ekFiyat": 50 },
+      { "id": "tereyagi", "ad": "Köy tereyağı", "ekFiyat": 40 }
+    ] },
+    { "id": "cay-boy", "ad": "Boy", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "ince-belli", "ad": "İnce belli" },
+      { "id": "kupa", "ad": "Kupa", "ekFiyat": 15 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Kapalı ve Kayık Pideler", "urunler": [
+      { "id": "kiymali", "ad": "Kıymalı Pide", "aciklama": "Dana kıyma, soğan, biber, domates", "fiyat": 330, "gorsel": "urunler/pide-kiymali.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "kusbasili", "ad": "Kuşbaşılı Pide", "aciklama": "Dana kuşbaşı, biber, domates", "fiyat": 430, "gorsel": "urunler/pide-kusbasi.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "kasarli", "ad": "Kaşarlı Pide", "aciklama": "Bol Kars kaşarı, tereyağı", "fiyat": 300, "gorsel": "urunler/pide-kasarli.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "karisik", "ad": "Karışık Pide", "aciklama": "Kıyma, kuşbaşı, sucuk, kaşar", "fiyat": 440, "gorsel": "urunler/pide-karisik.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "sucuklu-yumurtali", "ad": "Sucuklu Yumurtalı Pide", "aciklama": "Kasap sucuk, köy yumurtası, kaşar", "fiyat": 380, "gorsel": "urunler/pide-sucuklu.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "kavurmali", "ad": "Kavurmalı Pide", "aciklama": "Ev kavurması, kaşar, tereyağı", "fiyat": 470, "gorsel": "urunler/pide-kusbasi.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "karadeniz-acik", "ad": "Karadeniz Usulü Açık Pide", "aciklama": "Tereyağlı hamur, köy peyniri, yumurta sarısı ortada", "fiyat": 360, "gorsel": "urunler/pide-acik.jpg", "secenekGruplari": ["boy"] },
+      { "id": "ispanakli", "ad": "Ispanaklı Pide", "aciklama": "Ispanak, soğan, beyaz peynir (vejetaryen)", "fiyat": 280, "gorsel": "urunler/pide-ispanakli.jpg", "secenekGruplari": ["boy", "ekstra"] }
+    ] },
+    { "ad": "Diğer", "urunler": [
+      { "id": "lahmacun", "ad": "Lahmacun", "aciklama": "Fırından, maydanoz ve limonla", "fiyat": 140, "gorsel": "urunler/lahmacun.jpg" },
+      { "id": "sutlac", "ad": "Fırın Sütlaç", "aciklama": "Fındıklı", "fiyat": 150, "gorsel": "urunler/sutlac.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "ayran", "ad": "Ayran", "aciklama": "30 cl", "fiyat": 40, "gorsel": "urunler/ayran.jpg" },
+      { "id": "cay", "ad": "Rize Çayı", "aciklama": "Demlik çay", "fiyat": 25, "gorsel": "urunler/cay.jpg", "secenekGruplari": ["cay-boy"] }
+    ] }
+  ]
+}

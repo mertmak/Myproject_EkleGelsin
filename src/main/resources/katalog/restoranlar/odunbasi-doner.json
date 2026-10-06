@@ -1,0 +1,54 @@
+{
+  "id": "odunbasi-doner",
+  "ad": "Odunbaşı Dönerci",
+  "kategori": "doner",
+  "tanitim": "Meşe odunu ateşinde pişen kuzu karışımlı döner. Ustalık 1987'den beri.",
+  "logo": "logolar/odunbasi-doner.png",
+  "kapak": "kapaklar/odunbasi-doner.jpg",
+  "puan": 4.8,
+  "teslimatSuresi": { "enAz": 35, "enCok": 50 },
+  "minimumSepet": 350,
+  "teslimatUcreti": 29.90,
+  "calismaSaatleri": { "acilis": "11:00", "kapanis": "23:00" },
+  "secenekGruplari": [
+    { "id": "gramaj", "ad": "Porsiyon", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "gr-100", "ad": "100 g" },
+      { "id": "gr-150", "ad": "150 g", "ekFiyat": 210 },
+      { "id": "gr-200", "ad": "200 g", "ekFiyat": 420 }
+    ] },
+    { "id": "yaninda", "ad": "Yanında", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "pilav", "ad": "Pirinç pilavı" },
+      { "id": "bulgur", "ad": "Bulgur pilavı" },
+      { "id": "patates", "ad": "Patates kızartması", "ekFiyat": 30 }
+    ] },
+    { "id": "tereyagi", "ad": "Tereyağı", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "tereyagli", "ad": "Tereyağlı" },
+      { "id": "az-tereyagli", "ad": "Az tereyağlı" },
+      { "id": "tereyagsiz", "ad": "Tereyağsız" }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Çorbalar", "urunler": [
+      { "id": "mercimek", "ad": "Mercimek Çorbası", "aciklama": "Limon ve kıtır ekmekle", "fiyat": 140, "gorsel": "urunler/mercimek-corbasi.jpg" }
+    ] },
+    { "ad": "Dönerler", "urunler": [
+      { "id": "porsiyon-doner", "ad": "Porsiyon Döner", "aciklama": "Yaprak kuzu-dana döner, közlenmiş domates ve biber, lavaş", "fiyat": 470, "gorsel": "urunler/doner-porsiyon-et.jpg", "secenekGruplari": ["gramaj", "yaninda"] },
+      { "id": "iskender", "ad": "Odunbaşı İskender", "aciklama": "Pide üzerinde döner, ev yapımı domates sosu, yoğurt, kızgın tereyağı", "fiyat": 590, "gorsel": "urunler/iskender.jpg", "secenekGruplari": ["gramaj", "tereyagi"] },
+      { "id": "durum", "ad": "Lavaş Dürüm", "aciklama": "100 g döner, közlenmiş biber, sumaklı soğan", "fiyat": 440, "gorsel": "urunler/doner-durum-et.jpg" },
+      { "id": "yarim-ekmek", "ad": "Yarım Ekmek Döner", "aciklama": "Odun fırını ekmeği, 100 g döner, domates", "fiyat": 400, "gorsel": "urunler/ekmek-arasi-doner.jpg" },
+      { "id": "pide-doner", "ad": "Pideli Yoğurtlu Döner", "aciklama": "Küp pide, sarımsaklı yoğurt, döner, tereyağı", "fiyat": 540, "gorsel": "urunler/yogurtlu-doner.jpg", "secenekGruplari": ["gramaj"] }
+    ] },
+    { "ad": "Mezeler", "urunler": [
+      { "id": "ezme", "ad": "Acılı Ezme", "aciklama": "Domates, biber, soğan, nar ekşisi", "fiyat": 95, "gorsel": "urunler/acili-ezme.jpg" },
+      { "id": "haydari", "ad": "Haydari", "aciklama": "Süzme yoğurt, dereotu, sarımsak", "fiyat": 95 }
+    ] },
+    { "ad": "Tatlılar", "urunler": [
+      { "id": "kazandibi", "ad": "Kazandibi", "aciklama": "Tarçınlı, dilim", "fiyat": 160, "gorsel": "urunler/kazandibi.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "yayik-ayran", "ad": "Yayık Ayranı", "aciklama": "Köpüklü, bakır tasta, 40 cl", "fiyat": 65, "gorsel": "urunler/ayran.jpg" },
+      { "id": "salgam", "ad": "Şalgam Suyu", "aciklama": "Acılı veya acısız, 30 cl", "fiyat": 55, "gorsel": "urunler/salgam.jpg" },
+      { "id": "su", "ad": "Su", "aciklama": "50 cl", "fiyat": 20, "gorsel": "urunler/su.jpg" }
+    ] }
+  ]
+}

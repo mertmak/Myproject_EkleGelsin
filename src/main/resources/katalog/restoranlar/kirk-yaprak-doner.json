@@ -1,0 +1,59 @@
+{
+  "id": "kirk-yaprak-doner",
+  "ad": "Kırk Yaprak Döner",
+  "kategori": "doner",
+  "tanitim": "Her sabah elde yapraklanan dana döner, taş fırından yeni çıkmış lavaşla.",
+  "logo": "logolar/kirk-yaprak-doner.png",
+  "kapak": "kapaklar/kirk-yaprak-doner.jpg",
+  "puan": 4.7,
+  "teslimatSuresi": { "enAz": 25, "enCok": 35 },
+  "minimumSepet": 250,
+  "teslimatUcreti": 24.90,
+  "calismaSaatleri": { "acilis": "10:00", "kapanis": "02:00" },
+  "secenekGruplari": [
+    { "id": "porsiyon", "ad": "Porsiyon", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "porsiyon-1", "ad": "1 porsiyon" },
+      { "id": "porsiyon-1-5", "ad": "1,5 porsiyon", "ekFiyat": 220 }
+    ] },
+    { "id": "durum-ekstra", "ad": "Ekstralar", "enAz": 0, "enCok": 3, "secenekler": [
+      { "id": "kasar", "ad": "Kaşar", "ekFiyat": 40 },
+      { "id": "patates", "ad": "İçine patates", "ekFiyat": 30 },
+      { "id": "aci-sos", "ad": "Acı sos" }
+    ] },
+    { "id": "cikarilacak", "ad": "Çıkarılacaklar", "enAz": 0, "enCok": 3, "secenekler": [
+      { "id": "sogansiz", "ad": "Soğansız" },
+      { "id": "domatessiz", "ad": "Domatessiz" },
+      { "id": "tursusuz", "ad": "Turşusuz" }
+    ] },
+    { "id": "kutu-icecek", "ad": "İçecek", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kola", "ad": "Kola" },
+      { "id": "kola-sekersiz", "ad": "Kola Şekersiz" },
+      { "id": "portakalli-gazoz", "ad": "Portakallı gazoz" },
+      { "id": "limonlu-gazoz", "ad": "Limonlu gazoz" }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Dürümler", "urunler": [
+      { "id": "et-durum", "ad": "Et Döner Dürüm", "aciklama": "80 g yaprak dana döner, lavaş, domates, soğan, maydanoz, sumak", "fiyat": 420, "gorsel": "urunler/doner-durum-et.jpg", "secenekGruplari": ["durum-ekstra", "cikarilacak"] },
+      { "id": "tavuk-durum", "ad": "Tavuk Döner Dürüm", "aciklama": "100 g tavuk döner, lavaş, domates, marul, turşu, mayonez", "fiyat": 240, "gorsel": "urunler/doner-durum-tavuk.jpg", "secenekGruplari": ["durum-ekstra", "cikarilacak"] },
+      { "id": "ekmek-arasi-et", "ad": "Ekmek Arası Et Döner", "aciklama": "Yarım ekmek, 80 g dana döner, domates, soğan", "fiyat": 380, "gorsel": "urunler/ekmek-arasi-doner.jpg", "secenekGruplari": ["cikarilacak"] }
+    ] },
+    { "ad": "Porsiyonlar", "urunler": [
+      { "id": "pilavustu-et", "ad": "Pilav Üstü Et Döner", "aciklama": "120 g dana döner, tereyağlı pirinç pilavı, közlenmiş biber, domates", "fiyat": 520, "gorsel": "urunler/doner-porsiyon-et.jpg", "secenekGruplari": ["porsiyon"] },
+      { "id": "pilavustu-tavuk", "ad": "Pilav Üstü Tavuk Döner", "aciklama": "150 g tavuk döner, pirinç pilavı, patates kızartması", "fiyat": 320, "gorsel": "urunler/doner-porsiyon-tavuk.jpg", "secenekGruplari": ["porsiyon"] },
+      { "id": "iskender", "ad": "İskender", "aciklama": "Tırnak pide üzerinde dana döner, domates sosu, kızgın tereyağı, yoğurt", "fiyat": 560, "gorsel": "urunler/iskender.jpg", "secenekGruplari": ["porsiyon"] }
+    ] },
+    { "ad": "Yan Ürünler", "urunler": [
+      { "id": "patates", "ad": "Patates Kızartması", "aciklama": "Orta boy, çıtır elma dilim patates", "fiyat": 120, "gorsel": "urunler/patates-kizartmasi.jpg" },
+      { "id": "coban-salata", "ad": "Çoban Salata", "aciklama": "Domates, salatalık, biber, soğan, maydanoz, nar ekşisi", "fiyat": 110, "gorsel": "urunler/coban-salata.jpg" }
+    ] },
+    { "ad": "Tatlılar", "urunler": [
+      { "id": "sutlac", "ad": "Fırın Sütlaç", "aciklama": "Toprak kapta, üzeri kızarmış", "fiyat": 150, "gorsel": "urunler/sutlac.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "ayran", "ad": "Ayran", "aciklama": "30 cl", "fiyat": 45, "gorsel": "urunler/ayran.jpg" },
+      { "id": "kutu-icecek", "ad": "Kutu İçecek", "aciklama": "33 cl", "fiyat": 70, "gorsel": "urunler/kutu-icecek.jpg", "secenekGruplari": ["kutu-icecek"] },
+      { "id": "salgam", "ad": "Şalgam Suyu", "aciklama": "Acılı, 30 cl", "fiyat": 55, "gorsel": "urunler/salgam.jpg" }
+    ] }
+  ]
+}

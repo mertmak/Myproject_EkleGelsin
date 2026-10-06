@@ -1,0 +1,51 @@
+{
+  "id": "kozlu-ocak-lahmacun",
+  "ad": "Közlü Ocak Lahmacun",
+  "kategori": "lahmacun-pide",
+  "tanitim": "Antep usulü, zırhla çekilmiş kıymayla odun fırınında incecik lahmacun.",
+  "logo": "logolar/kozlu-ocak-lahmacun.png",
+  "kapak": "kapaklar/kozlu-ocak-lahmacun.jpg",
+  "puan": 4.7,
+  "teslimatSuresi": { "enAz": 25, "enCok": 40 },
+  "minimumSepet": 250,
+  "teslimatUcreti": 19.90,
+  "calismaSaatleri": { "acilis": "11:00", "kapanis": "23:30" },
+  "secenekGruplari": [
+    { "id": "aci", "ad": "Acı", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "acisiz", "ad": "Acısız" },
+      { "id": "acili", "ad": "Acılı" }
+    ] },
+    { "id": "yesillik", "ad": "Yanına", "enAz": 0, "enCok": 3, "secenekler": [
+      { "id": "maydanoz", "ad": "Maydanoz" },
+      { "id": "sogan", "ad": "Sumaklı soğan" },
+      { "id": "limon", "ad": "Limon" }
+    ] },
+    { "id": "kunefe-porsiyon", "ad": "Porsiyon", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "tek", "ad": "Tek kişilik" },
+      { "id": "cift", "ad": "İki kişilik", "ekFiyat": 230 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Lahmacunlar", "urunler": [
+      { "id": "lahmacun", "ad": "Antep Lahmacun", "aciklama": "Zırh kıyması, isot, domates, maydanoz", "fiyat": 155, "gorsel": "urunler/lahmacun.jpg", "secenekGruplari": ["aci", "yesillik"] },
+      { "id": "findik-lahmacun", "ad": "Fındık Lahmacun", "aciklama": "6 adet minik lahmacun", "fiyat": 230, "gorsel": "urunler/findik-lahmacun.jpg", "secenekGruplari": ["aci", "yesillik"] },
+      { "id": "kasarli-lahmacun", "ad": "Kaşarlı Lahmacun", "aciklama": "Üzerine eritilmiş Kars kaşarı", "fiyat": 195, "gorsel": "urunler/lahmacun.jpg", "secenekGruplari": ["aci", "yesillik"] },
+      { "id": "lahmacun-durum", "ad": "Lahmacun Dürüm", "aciklama": "İki lahmacun arası salata ve ayran", "fiyat": 310, "gorsel": "urunler/lahmacun-durum.jpg", "secenekGruplari": ["aci"] }
+    ] },
+    { "ad": "Kebaplar", "urunler": [
+      { "id": "adana", "ad": "Adana Kebap", "aciklama": "Zırh kıyması, közlenmiş domates ve biber, lavaş", "fiyat": 520, "gorsel": "urunler/adana-kebap.jpg" },
+      { "id": "beyti", "ad": "Beyti Sarma", "aciklama": "Lavaşa sarılı kebap, yoğurt, tereyağlı domates sos", "fiyat": 580, "gorsel": "urunler/beyti.jpg" }
+    ] },
+    { "ad": "Salatalar", "urunler": [
+      { "id": "gavurdagi", "ad": "Gavurdağı Salata", "aciklama": "Domates, ceviz, nar ekşisi, sumak", "fiyat": 180, "gorsel": "urunler/gavurdagi-salata.jpg" }
+    ] },
+    { "ad": "Tatlılar", "urunler": [
+      { "id": "kunefe", "ad": "Künefe", "aciklama": "Hatay peyniri, tel kadayıf, Antep fıstığı", "fiyat": 280, "gorsel": "urunler/kunefe.jpg", "secenekGruplari": ["kunefe-porsiyon"] },
+      { "id": "baklava", "ad": "Fıstıklı Baklava", "aciklama": "4 dilim", "fiyat": 320, "gorsel": "urunler/baklava-fistikli.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "ayran", "ad": "Ayran", "aciklama": "Açık, 40 cl", "fiyat": 50, "gorsel": "urunler/ayran.jpg" },
+      { "id": "salgam", "ad": "Şalgam Suyu", "aciklama": "Acılı, 30 cl", "fiyat": 55, "gorsel": "urunler/salgam.jpg" }
+    ] }
+  ]
+}

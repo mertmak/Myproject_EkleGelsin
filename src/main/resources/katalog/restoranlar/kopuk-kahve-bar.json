@@ -1,0 +1,62 @@
+{
+  "id": "kopuk-kahve-bar",
+  "ad": "Köpük Kahve Bar",
+  "kategori": "kahve",
+  "tanitim": "Şuruplu, buzlu, bol köpüklü: tatlı kahve sevenlerin adresi.",
+  "logo": "logolar/kopuk-kahve-bar.png",
+  "kapak": "kapaklar/kopuk-kahve-bar.jpg",
+  "puan": 4.3,
+  "teslimatSuresi": { "enAz": 15, "enCok": 30 },
+  "minimumSepet": 180,
+  "teslimatUcreti": 0,
+  "calismaSaatleri": { "acilis": "08:00", "kapanis": "23:00" },
+  "secenekGruplari": [
+    { "id": "boy", "ad": "Boy", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "orta", "ad": "Orta" },
+      { "id": "buyuk", "ad": "Büyük", "ekFiyat": 30 },
+      { "id": "dev", "ad": "Dev", "ekFiyat": 55 }
+    ] },
+    { "id": "sut", "ad": "Süt", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "inek", "ad": "İnek sütü" },
+      { "id": "laktozsuz", "ad": "Laktozsuz" },
+      { "id": "yulaf", "ad": "Yulaf sütü", "ekFiyat": 25 },
+      { "id": "hindistan-cevizi", "ad": "Hindistan cevizi sütü", "ekFiyat": 25 }
+    ] },
+    { "id": "surup", "ad": "Şurup", "enAz": 0, "enCok": 2, "secenekler": [
+      { "id": "vanilya", "ad": "Vanilya", "ekFiyat": 20 },
+      { "id": "karamel", "ad": "Karamel", "ekFiyat": 20 },
+      { "id": "findik", "ad": "Fındık", "ekFiyat": 20 },
+      { "id": "beyaz-cikolata", "ad": "Beyaz çikolata", "ekFiyat": 20 }
+    ] },
+    { "id": "krema", "ad": "Üzerine", "enAz": 0, "enCok": 1, "secenekler": [
+      { "id": "krem-santi", "ad": "Krem şanti", "ekFiyat": 20 }
+    ] },
+    { "id": "tost-cesit", "ad": "Çeşit", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kasarli", "ad": "Kaşarlı" },
+      { "id": "karisik", "ad": "Sucuklu kaşarlı", "ekFiyat": 40 },
+      { "id": "hindi-fume", "ad": "Hindi füme ve cheddar", "ekFiyat": 50 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Sıcak Kahveler", "urunler": [
+      { "id": "latte", "ad": "Latte", "aciklama": "Espresso ve buharlanmış süt", "fiyat": 165, "gorsel": "urunler/latte.jpg", "secenekGruplari": ["boy", "sut", "surup"] },
+      { "id": "caramel-macchiato", "ad": "Karamel Macchiato", "aciklama": "Vanilyalı süt, espresso, karamel sos", "fiyat": 205, "gorsel": "urunler/karamel-macchiato.jpg", "secenekGruplari": ["boy", "sut", "krema"] },
+      { "id": "mocha", "ad": "Mocha", "aciklama": "Espresso, çikolata sos, süt", "fiyat": 200, "gorsel": "urunler/mocha.jpg", "secenekGruplari": ["boy", "sut", "krema"] },
+      { "id": "white-mocha", "ad": "Beyaz Çikolatalı Mocha", "aciklama": "Espresso, beyaz çikolata, süt", "fiyat": 205, "gorsel": "urunler/mocha.jpg", "secenekGruplari": ["boy", "sut", "krema"] },
+      { "id": "chai-latte", "ad": "Chai Tea Latte", "aciklama": "Baharatlı siyah çay, süt", "fiyat": 185, "gorsel": "urunler/chai-latte.jpg", "secenekGruplari": ["boy", "sut"] }
+    ] },
+    { "ad": "Soğuk Kahveler", "urunler": [
+      { "id": "frappe", "ad": "Karamelli Frappe", "aciklama": "Buzla çırpılmış kahve, karamel, krem şanti", "fiyat": 215, "gorsel": "urunler/frappe.jpg", "secenekGruplari": ["boy", "sut", "krema"] },
+      { "id": "iced-americano", "ad": "Iced Americano", "aciklama": "Espresso, soğuk su, buz", "fiyat": 155, "gorsel": "urunler/iced-americano.jpg", "secenekGruplari": ["boy", "surup"] },
+      { "id": "iced-latte", "ad": "Iced Latte", "aciklama": "Espresso, soğuk süt, buz", "fiyat": 180, "gorsel": "urunler/iced-latte.jpg", "secenekGruplari": ["boy", "sut", "surup"] }
+    ] },
+    { "ad": "Kahve Dışı", "urunler": [
+      { "id": "sicak-cikolata", "ad": "Sıcak Çikolata", "aciklama": "Marshmallow ile", "fiyat": 180, "gorsel": "urunler/sicak-cikolata.jpg", "secenekGruplari": ["boy", "sut", "krema"] }
+    ] },
+    { "ad": "Atıştırmalık", "urunler": [
+      { "id": "muffin", "ad": "Yaban Mersinli Muffin", "aciklama": "Günlük", "fiyat": 130, "gorsel": "urunler/muffin.jpg" },
+      { "id": "tost", "ad": "Bazlama Tost", "aciklama": "Domates ve yeşillikle", "fiyat": 220, "gorsel": "urunler/tost.jpg", "secenekGruplari": ["tost-cesit"] },
+      { "id": "brownie", "ad": "Brownie", "aciklama": "Fındıklı", "fiyat": 150, "gorsel": "urunler/brownie.jpg" }
+    ] }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "serbetli-baklava-evi",
+  "ad": "Şerbetli Baklava Evi",
+  "kategori": "tatli",
+  "tanitim": "40 kat el açması yufka, Antep'in boz fıstığı ve sade yağla günlük baklava.",
+  "logo": "logolar/serbetli-baklava-evi.png",
+  "kapak": "kapaklar/serbetli-baklava-evi.jpg",
+  "puan": 4.9,
+  "teslimatSuresi": { "enAz": 30, "enCok": 45 },
+  "minimumSepet": 300,
+  "teslimatUcreti": 29.90,
+  "calismaSaatleri": { "acilis": "08:00", "kapanis": "00:00" },
+  "secenekGruplari": [
+    { "id": "gramaj", "ad": "Gramaj", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "gr-250", "ad": "250 g" },
+      { "id": "gr-500", "ad": "500 g", "ekFiyat": 520 },
+      { "id": "kg-1", "ad": "1 kg", "ekFiyat": 1560 }
+    ] },
+    { "id": "yaninda", "ad": "Yanında", "enAz": 0, "enCok": 2, "secenekler": [
+      { "id": "dondurma", "ad": "Maraş dondurması (1 top)", "ekFiyat": 60 },
+      { "id": "kaymak", "ad": "Afyon kaymağı", "ekFiyat": 80 }
+    ] },
+    { "id": "seker", "ad": "Şeker", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "sade", "ad": "Sade" },
+      { "id": "az-sekerli", "ad": "Az şekerli" },
+      { "id": "orta", "ad": "Orta" },
+      { "id": "sekerli", "ad": "Şekerli" }
+    ] },
+    { "id": "dondurma-top", "ad": "Top sayısı", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "top-3", "ad": "3 top" },
+      { "id": "top-5", "ad": "5 top", "ekFiyat": 90 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Baklavalar", "urunler": [
+      { "id": "fistikli-baklava", "ad": "Fıstıklı Baklava", "aciklama": "Boz Antep fıstığı, sade yağ", "fiyat": 520, "gorsel": "urunler/baklava-fistikli.jpg", "secenekGruplari": ["gramaj"] },
+      { "id": "cevizli-baklava", "ad": "Cevizli Baklava", "aciklama": "Kastamonu cevizi", "fiyat": 380, "gorsel": "urunler/baklava-cevizli.jpg", "secenekGruplari": ["gramaj"] },
+      { "id": "sobiyet", "ad": "Şöbiyet", "aciklama": "Fıstık ve kaymak dolgulu üçgen", "fiyat": 560, "gorsel": "urunler/sobiyet.jpg", "secenekGruplari": ["gramaj"] },
+      { "id": "fistik-sarma", "ad": "Fıstık Sarma", "aciklama": "Bol fıstıklı, ince sarma", "fiyat": 600, "gorsel": "urunler/fistik-sarma.jpg", "secenekGruplari": ["gramaj"] },
+      { "id": "havuc-dilimi", "ad": "Havuç Dilimi", "aciklama": "Fıstıklı, porsiyon (2 adet)", "fiyat": 340, "gorsel": "urunler/havuc-dilimi.jpg", "secenekGruplari": ["yaninda"] }
+    ] },
+    { "ad": "Kadayıf ve Künefe", "urunler": [
+      { "id": "burma-kadayif", "ad": "Burma Kadayıf", "aciklama": "Fıstıklı, porsiyon", "fiyat": 330, "gorsel": "urunler/burma-kadayif.jpg", "secenekGruplari": ["yaninda"] },
+      { "id": "kunefe", "ad": "Künefe", "aciklama": "Sıcak servis, Hatay peyniri", "fiyat": 300, "gorsel": "urunler/kunefe.jpg", "secenekGruplari": ["yaninda"] },
+      { "id": "katmer", "ad": "Antep Katmeri", "aciklama": "Kaymak ve fıstıkla, sıcak", "fiyat": 380, "gorsel": "urunler/katmer.jpg" }
+    ] },
+    { "ad": "Dondurma", "urunler": [
+      { "id": "maras-dondurmasi", "ad": "Maraş Dondurması", "aciklama": "Sade, kakaolu veya fıstıklı karışık", "fiyat": 160, "gorsel": "urunler/dondurma.jpg", "secenekGruplari": ["dondurma-top"] }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "turk-kahvesi", "ad": "Türk Kahvesi", "aciklama": "Lokum ile", "fiyat": 120, "gorsel": "urunler/turk-kahvesi.jpg", "secenekGruplari": ["seker"] },
+      { "id": "cay", "ad": "Çay", "aciklama": "İnce belli bardakta", "fiyat": 30, "gorsel": "urunler/cay.jpg" }
+    ] }
+  ]
+}

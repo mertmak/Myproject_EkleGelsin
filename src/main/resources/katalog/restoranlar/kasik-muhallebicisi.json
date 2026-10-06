@@ -1,0 +1,44 @@
+{
+  "id": "kasik-muhallebicisi",
+  "ad": "Kaşık Muhallebicisi",
+  "kategori": "tatli",
+  "tanitim": "Manda sütüyle her gün kazanda pişen sütlü tatlılar.",
+  "logo": "logolar/kasik-muhallebicisi.png",
+  "kapak": "kapaklar/kasik-muhallebicisi.jpg",
+  "puan": 4.6,
+  "teslimatSuresi": { "enAz": 20, "enCok": 35 },
+  "minimumSepet": 200,
+  "teslimatUcreti": 14.90,
+  "calismaSaatleri": { "acilis": "07:00", "kapanis": "23:00" },
+  "secenekGruplari": [
+    { "id": "porsiyon", "ad": "Porsiyon", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "tek", "ad": "Tek" },
+      { "id": "duble", "ad": "Duble", "ekFiyat": 110 }
+    ] },
+    { "id": "ust", "ad": "Üzerine", "enAz": 0, "enCok": 2, "secenekler": [
+      { "id": "tarcin", "ad": "Tarçın" },
+      { "id": "findik", "ad": "Fındık", "ekFiyat": 25 },
+      { "id": "fistik", "ad": "Antep fıstığı", "ekFiyat": 45 },
+      { "id": "dondurma", "ad": "Dondurma (1 top)", "ekFiyat": 55 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Sütlü Tatlılar", "urunler": [
+      { "id": "firin-sutlac", "ad": "Fırın Sütlaç", "aciklama": "Toprak kapta, manda sütü", "fiyat": 165, "gorsel": "urunler/sutlac.jpg", "secenekGruplari": ["porsiyon", "ust"] },
+      { "id": "kazandibi", "ad": "Kazandibi", "aciklama": "Altı karamelize, tarçınlı", "fiyat": 175, "gorsel": "urunler/kazandibi.jpg", "secenekGruplari": ["porsiyon", "ust"] },
+      { "id": "tavuk-gogsu", "ad": "Tavuk Göğsü", "aciklama": "Geleneksel tarif, tarçınlı", "fiyat": 175, "gorsel": "urunler/tavuk-gogsu.jpg", "secenekGruplari": ["porsiyon", "ust"] },
+      { "id": "keskul", "ad": "Keşkül", "aciklama": "Badem ve hindistan cevizi", "fiyat": 165, "gorsel": "urunler/keskul.jpg", "secenekGruplari": ["porsiyon", "ust"] },
+      { "id": "muhallebi", "ad": "Su Muhallebisi", "aciklama": "Gül suyu ve pudra şekeriyle", "fiyat": 145, "gorsel": "urunler/muhallebi.jpg", "secenekGruplari": ["porsiyon"] },
+      { "id": "supangle", "ad": "Supangle", "aciklama": "Bitter çikolata, kek tabanı", "fiyat": 175, "gorsel": "urunler/supangle.jpg", "secenekGruplari": ["porsiyon", "ust"] },
+      { "id": "profiterol", "ad": "Profiterol", "aciklama": "6 adet, sıcak çikolata sos", "fiyat": 210, "gorsel": "urunler/profiterol.jpg", "secenekGruplari": ["porsiyon"] },
+      { "id": "trilece", "ad": "Trileçe", "aciklama": "Üç sütlü kek, karamel", "fiyat": 190, "gorsel": "urunler/trilece.jpg" }
+    ] },
+    { "ad": "Mevsimlik", "urunler": [
+      { "id": "asure", "ad": "Aşure", "aciklama": "Kuru meyve, nar, ceviz", "fiyat": 150, "gorsel": "urunler/asure.jpg", "secenekGruplari": ["porsiyon"] },
+      { "id": "salep", "ad": "Salep", "aciklama": "Sıcak, tarçınlı, 30 cl", "fiyat": 140, "gorsel": "urunler/salep.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "cay", "ad": "Çay", "aciklama": "Demlik", "fiyat": 25, "gorsel": "urunler/cay.jpg" }
+    ] }
+  ]
+}

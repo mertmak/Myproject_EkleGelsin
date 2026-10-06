@@ -1,0 +1,49 @@
+{
+  "id": "tatli-dukkani",
+  "ad": "Tatlı Dükkânı",
+  "kategori": "tatli",
+  "tanitim": "Cheesecake'ten sufleye, butik pastane tatlıları kapınıza.",
+  "logo": "logolar/tatli-dukkani.png",
+  "kapak": "kapaklar/tatli-dukkani.jpg",
+  "puan": 4.5,
+  "teslimatSuresi": { "enAz": 25, "enCok": 40 },
+  "minimumSepet": 250,
+  "teslimatUcreti": 24.90,
+  "calismaSaatleri": { "acilis": "10:00", "kapanis": "00:00" },
+  "secenekGruplari": [
+    { "id": "sos", "ad": "Sos", "enAz": 0, "enCok": 2, "secenekler": [
+      { "id": "frambuaz", "ad": "Frambuaz", "ekFiyat": 30 },
+      { "id": "cikolata", "ad": "Bitter çikolata", "ekFiyat": 30 },
+      { "id": "karamel", "ad": "Tuzlu karamel", "ekFiyat": 30 }
+    ] },
+    { "id": "magnolia-tat", "ad": "Çeşit", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "cilekli", "ad": "Çilekli" },
+      { "id": "muzlu", "ad": "Muzlu" },
+      { "id": "lotus", "ad": "Bisküvi karamelli" }
+    ] },
+    { "id": "waffle-meyve", "ad": "Meyveler", "enAz": 1, "enCok": 3, "secenekler": [
+      { "id": "cilek", "ad": "Çilek" },
+      { "id": "muz", "ad": "Muz" },
+      { "id": "kivi", "ad": "Kivi" },
+      { "id": "bogurtlen", "ad": "Böğürtlen", "ekFiyat": 35 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Pastane", "urunler": [
+      { "id": "san-sebastian", "ad": "San Sebastian Cheesecake", "aciklama": "Yanık üstlü, akışkan iç, dilim", "fiyat": 270, "gorsel": "urunler/san-sebastian.jpg", "secenekGruplari": ["sos"] },
+      { "id": "brownie", "ad": "Brownie", "aciklama": "Belçika çikolatası, cevizli", "fiyat": 200, "gorsel": "urunler/brownie.jpg", "secenekGruplari": ["sos"] },
+      { "id": "tiramisu", "ad": "Tiramisu", "aciklama": "Kare dilim", "fiyat": 240, "gorsel": "urunler/tiramisu.jpg" },
+      { "id": "magnolia", "ad": "Magnolia", "aciklama": "Kremalı, bisküvili, kupta", "fiyat": 210, "gorsel": "urunler/magnolia.jpg", "secenekGruplari": ["magnolia-tat"] },
+      { "id": "ekler", "ad": "Ekler", "aciklama": "4 adet, çikolata kaplı", "fiyat": 180, "gorsel": "urunler/ekler.jpg" }
+    ] },
+    { "ad": "Sıcak Tatlılar", "urunler": [
+      { "id": "sufle", "ad": "Çikolatalı Sufle", "aciklama": "Akışkan iç, vanilyalı dondurmayla", "fiyat": 250, "gorsel": "urunler/sufle.jpg" },
+      { "id": "waffle", "ad": "Waffle", "aciklama": "Fındık kreması ve seçtiğin meyvelerle", "fiyat": 340, "gorsel": "urunler/waffle.jpg", "secenekGruplari": ["waffle-meyve", "sos"] },
+      { "id": "krep", "ad": "Çikolatalı Krep", "aciklama": "Muz ve fındık kreması", "fiyat": 260, "gorsel": "urunler/krep.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "sicak-cikolata", "ad": "Sıcak Çikolata", "aciklama": "Bitter çikolata, 30 cl", "fiyat": 170, "gorsel": "urunler/sicak-cikolata.jpg" },
+      { "id": "limonata", "ad": "Çilekli Limonata", "aciklama": "40 cl", "fiyat": 110, "gorsel": "urunler/limonata.jpg" }
+    ] }
+  ]
+}

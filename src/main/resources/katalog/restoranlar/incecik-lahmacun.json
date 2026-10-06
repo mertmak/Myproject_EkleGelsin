@@ -1,0 +1,47 @@
+{
+  "id": "incecik-lahmacun",
+  "ad": "İncecik Lahmacun & Pide",
+  "kategori": "lahmacun-pide",
+  "tanitim": "Hızlı, sıcak ve uygun fiyatlı: kâğıt inceliğinde lahmacun, günlük pide.",
+  "logo": "logolar/incecik-lahmacun.png",
+  "kapak": "kapaklar/incecik-lahmacun.jpg",
+  "puan": 4.2,
+  "teslimatSuresi": { "enAz": 20, "enCok": 30 },
+  "minimumSepet": 180,
+  "teslimatUcreti": 0,
+  "calismaSaatleri": { "acilis": "10:00", "kapanis": "01:00" },
+  "secenekGruplari": [
+    { "id": "adet", "ad": "Adet", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "adet-1", "ad": "1 adet" },
+      { "id": "adet-2", "ad": "2 adet", "ekFiyat": 115 },
+      { "id": "adet-3", "ad": "3 adet", "ekFiyat": 225 }
+    ] },
+    { "id": "aci", "ad": "Acı", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "acisiz", "ad": "Acısız" },
+      { "id": "acili", "ad": "Acılı" }
+    ] },
+    { "id": "pide-ekstra", "ad": "Ekstralar", "enAz": 0, "enCok": 2, "secenekler": [
+      { "id": "kasar", "ad": "Ekstra kaşar", "ekFiyat": 40 },
+      { "id": "yumurta", "ad": "Yumurta", "ekFiyat": 20 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Lahmacun", "urunler": [
+      { "id": "lahmacun", "ad": "Lahmacun", "aciklama": "Kıymalı, incecik hamur", "fiyat": 120, "gorsel": "urunler/lahmacun.jpg", "secenekGruplari": ["adet", "aci"] },
+      { "id": "kasarli-lahmacun", "ad": "Kaşarlı Lahmacun", "aciklama": "Kıyma ve kaşar", "fiyat": 155, "gorsel": "urunler/lahmacun.jpg", "secenekGruplari": ["aci"] },
+      { "id": "lahmacun-menu", "ad": "Lahmacun Menü", "aciklama": "2 lahmacun + ayran + salata", "fiyat": 290, "gorsel": "urunler/lahmacun-durum.jpg", "secenekGruplari": ["aci"] }
+    ] },
+    { "ad": "Pideler", "urunler": [
+      { "id": "kiymali", "ad": "Kıymalı Pide", "aciklama": "Kıyma, soğan, domates", "fiyat": 260, "gorsel": "urunler/pide-kiymali.jpg", "secenekGruplari": ["pide-ekstra"] },
+      { "id": "kasarli", "ad": "Kaşarlı Pide", "aciklama": "Kaşar, tereyağı", "fiyat": 240, "gorsel": "urunler/pide-kasarli.jpg", "secenekGruplari": ["pide-ekstra"] },
+      { "id": "tavuklu", "ad": "Tavuklu Pide", "aciklama": "Tavuk göğsü, biber, kaşar", "fiyat": 270, "gorsel": "urunler/pide-karisik.jpg", "secenekGruplari": ["pide-ekstra"] },
+      { "id": "sucuklu", "ad": "Sucuklu Kaşarlı Pide", "aciklama": "Sucuk, kaşar", "fiyat": 290, "gorsel": "urunler/pide-sucuklu.jpg", "secenekGruplari": ["pide-ekstra"] },
+      { "id": "ispanakli", "ad": "Ispanaklı Pide", "aciklama": "Ispanak, beyaz peynir", "fiyat": 230, "gorsel": "urunler/pide-ispanakli.jpg", "secenekGruplari": ["pide-ekstra"] }
+    ] },
+    { "ad": "Tatlı ve İçecek", "urunler": [
+      { "id": "kunefe", "ad": "Künefe", "aciklama": "Tek kişilik", "fiyat": 240, "gorsel": "urunler/kunefe.jpg" },
+      { "id": "ayran", "ad": "Ayran", "aciklama": "30 cl", "fiyat": 35, "gorsel": "urunler/ayran.jpg" },
+      { "id": "salgam", "ad": "Şalgam Suyu", "aciklama": "30 cl", "fiyat": 45, "gorsel": "urunler/salgam.jpg" }
+    ] }
+  ]
+}

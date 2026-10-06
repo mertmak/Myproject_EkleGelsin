@@ -69,16 +69,18 @@ Arayüzden tamamen bağımsız, baştan testli çekirdek.
 
 **Sonuç:** 63 test, %98 satır kapsamı (servis katmanı %100). Kapsam JaCoCo ile ölçülüyor; %80'in altına düşerse `./mvnw verify` başarısız oluyor. Testler, adında ilgili hata kodunu taşıyor (ör. `H1_buAySonunaKadarGecerliKartKabulEdilir`).
 
-## Faz 2 — Gerçekçi katalog · *M*
+## Faz 2 — Gerçekçi katalog · *M* · ✅ Tamamlandı
 
-- [ ] **Kategoriler:** Döner, Pizza, Burger, Lahmacun & Pide, Tatlı, Kahve (en az 5).
-- [ ] **Restoranlar:** her kategoride 3–4 adet, toplam ~20. Her birinin kendine özgü adı, kısa tanıtımı, logosu, puanı, teslimat süresi, minimum tutarı ve teslimat ücreti olsun.
-- [ ] **Ürünler:** restoran başına 8–15 adet, menü bölümlerine ayrılmış. Her üründe gerçekçi açıklama ("Yaprak döner, lavaş, domates, soğan, sumak"), güncel ve gerçekçi fiyat ve görsel olsun.
-- [ ] **Görseller:** lisansı serbest kaynaklardan (Unsplash, Pexels) alınsın, ~600 px genişliğe küçültülüp `resources/gorseller/` altına konsun. Kaynaklar `resources/gorseller/KAYNAKLAR.md` dosyasında listelensin. Görseli olmayan ürün için şık bir yer tutucu kullanılsın.
-- [ ] **Marka adları:** gerçek zincir adları ("Pizza Hut", "Burger King") ve logoları yerine gerçekçi ama kurgusal adlar kullanılsın. Repo herkese açık olduğu için marka hakkı sorununu önler.
-- [ ] Katalog yüklenirken doğrulama yapılsın (eksik görsel, negatif fiyat, tekrar eden id). Test, gerçek katalog dosyasının geçerli olduğunu doğrulasın.
+- [x] **Kategoriler:** Döner, Pizza, Burger, Lahmacun & Pide, Tatlı, Kahve (6 adet).
+- [x] **Restoranlar:** her kategoride 3–4 adet, toplam 20. Her birinin kendine özgü adı, kısa tanıtımı, logosu, kapak görseli, puanı, teslimat süresi, minimum tutarı, teslimat ücreti ve çalışma saatleri var.
+- [x] **Ürünler:** restoran başına 9–13 adet, menü bölümlerine ayrılmış, toplam 226. Her üründe gerçekçi açıklama, 2026 sonu İstanbul fiyatları ve görsel var. Seçenek grupları (porsiyon, boy, ekstralar, çıkarılacaklar, içecek, şeker vb.) restoran düzeyinde bir kez tanımlanıp ürünlerde id ile kullanılıyor.
+- [x] **Görseller:** [Openverse](https://openverse.org) üzerinden ticari kullanıma ve değiştirmeye izin veren lisanslı (CC0, kamu malı, CC BY, CC BY-SA) fotoğraflar seçildi; ürünler 600×450, kapaklar 960×384 boyutuna kırpıldı ve `src/main/resources/gorseller/` altına kondu. Yazar ve lisanslar `gorseller/KAYNAKLAR.md` dosyasında. Logolar ve görseli olmayan ürünler için yer tutucu (`gorseller/yer-tutucu.png`) bu proje için üretildi. Unsplash/Pexels'e geçmek istenirse yalnızca dosyalar ve `KAYNAKLAR.md` değişir.
+- [x] **Marka adları:** tüm restoran adları kurgusal. `GercekKatalogTest` büyük zincirlerin adlarını içeren bir restoran adını reddediyor.
+- [x] Katalog yüklenirken doğrulama yapılıyor: eksik görsel, Swing'in (ImageIO) okuyamadığı görsel biçimi, negatif veya sıfır fiyat, tekrar eden id, Türkçe karakterli id, bilinmeyen kategori, tanımsız ya da kullanılmayan seçenek grubu, bilinmeyen JSON alanı (yazım hatası). Tüm sorunlar tek seferde, dosya ve ürün bilgisiyle raporlanıyor. `GercekKatalogTest` gerçek katalog dosyasının geçerli olduğunu doğruluyor.
 
 **Bitti sayılır:** yeni bir restoran eklemek sadece JSON dosyası ve görsel eklemekten ibaret.
+
+**Sonuç:** `katalog/restoranlar/<id>.json` yazıp id'yi `katalog/katalog.json` listesine eklemek ve görselleri koymak yeterli; kod değişikliği gerekmiyor. JSON, Jackson 3 ile okunuyor.
 
 ## Faz 3 — Kalıcı veri · *M*
 
@@ -161,7 +163,7 @@ Tek pencere (`JFrame`). Ekranlar bu pencerenin içinde `CardLayout` ile değişi
 |------|-----|-------|
 | 1 | 0 · İskelet | Derlenen, test edilen, boş pencere açan proje |
 | 2 | 1 · Domain | Testli iş kuralları, eski hataların çözümü |
-| 3 | 2 · Katalog | ~20 restoran, yüzlerce gerçekçi ürün ve görsel |
+| 3 | 2 · Katalog | 20 restoran, 226 gerçekçi ürün ve görsel ✅ |
 | 4 | 3 · Kalıcı veri | Kapatınca kaybolmayan siparişler, adresler, sepet |
 | 5 | 4 · Arayüz + akış | Modern görünüm ve eksiksiz sipariş deneyimi |
 | 6 | 5 · Cilalama + paket | Kurulabilir, bitmiş uygulama |

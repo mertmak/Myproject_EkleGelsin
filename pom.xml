@@ -14,6 +14,7 @@
         <maven.compiler.release>25</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>6.1.3</junit.version>
+        <jackson.version>3.2.3</jackson.version>
         <anaSinif>eklegelsin/eklegelsin.arayuz.EkleGelsinUygulamasi</anaSinif>
     </properties>
 
@@ -30,6 +31,11 @@
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>tools.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>

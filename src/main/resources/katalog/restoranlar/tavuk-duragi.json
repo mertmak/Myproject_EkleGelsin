@@ -1,0 +1,54 @@
+{
+  "id": "tavuk-duragi",
+  "ad": "Tavuk Durağı",
+  "kategori": "doner",
+  "tanitim": "Mahallenin uygun fiyatlı tavuk dönercisi. Öğrenci menüsü her gün.",
+  "logo": "logolar/tavuk-duragi.png",
+  "kapak": "kapaklar/tavuk-duragi.jpg",
+  "puan": 4.1,
+  "teslimatSuresi": { "enAz": 15, "enCok": 25 },
+  "minimumSepet": 150,
+  "teslimatUcreti": 0,
+  "calismaSaatleri": { "acilis": "10:30", "kapanis": "00:00" },
+  "secenekGruplari": [
+    { "id": "ekmek", "ad": "Ekmek", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "yarim", "ad": "Yarım ekmek" },
+      { "id": "ceyrek", "ad": "Çeyrek ekmek (az iç)" },
+      { "id": "tam", "ad": "Tam ekmek", "ekFiyat": 110 }
+    ] },
+    { "id": "ekstra", "ad": "Ekstralar", "enAz": 0, "enCok": 2, "secenekler": [
+      { "id": "kasar", "ad": "Kaşar", "ekFiyat": 35 },
+      { "id": "patates", "ad": "İçine patates", "ekFiyat": 25 }
+    ] },
+    { "id": "cikarilacak", "ad": "Çıkarılacaklar", "enAz": 0, "enCok": 3, "secenekler": [
+      { "id": "tursusuz", "ad": "Turşusuz" },
+      { "id": "mayonezsiz", "ad": "Mayonezsiz" },
+      { "id": "ketcapsiz", "ad": "Ketçapsız" }
+    ] },
+    { "id": "kutu-icecek", "ad": "İçecek", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kola", "ad": "Kola" },
+      { "id": "gazoz", "ad": "Gazoz" },
+      { "id": "ice-tea", "ad": "Şeftalili soğuk çay" }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Tavuk Döner", "urunler": [
+      { "id": "ekmek-arasi", "ad": "Ekmek Arası Tavuk Döner", "aciklama": "Tavuk döner, domates, turşu, patates, mayonez, ketçap", "fiyat": 185, "gorsel": "urunler/ekmek-arasi-doner.jpg", "secenekGruplari": ["ekmek", "ekstra", "cikarilacak"] },
+      { "id": "durum", "ad": "Tavuk Dürüm", "aciklama": "Lavaş, tavuk döner, marul, turşu, patates", "fiyat": 195, "gorsel": "urunler/doner-durum-tavuk.jpg", "secenekGruplari": ["ekstra", "cikarilacak"] },
+      { "id": "pilavustu", "ad": "Pilav Üstü Tavuk Döner", "aciklama": "150 g tavuk döner, pirinç pilavı, turşu", "fiyat": 260, "gorsel": "urunler/doner-porsiyon-tavuk.jpg" },
+      { "id": "tavuk-iskender", "ad": "Tavuk İskender", "aciklama": "Pide üzerinde tavuk döner, domates sosu, yoğurt, tereyağı", "fiyat": 310, "gorsel": "urunler/iskender.jpg" }
+    ] },
+    { "ad": "Menüler", "urunler": [
+      { "id": "ogrenci-menusu", "ad": "Öğrenci Menüsü", "aciklama": "Yarım ekmek tavuk döner + patates + ayran", "fiyat": 245, "gorsel": "urunler/doner-menu.jpg", "secenekGruplari": ["cikarilacak"] },
+      { "id": "ikili-menu", "ad": "İkili Dürüm Menü", "aciklama": "2 tavuk dürüm + büyük patates + 2 kutu içecek", "fiyat": 520, "gorsel": "urunler/doner-durum-tavuk.jpg", "secenekGruplari": ["kutu-icecek"] }
+    ] },
+    { "ad": "Yan Ürünler", "urunler": [
+      { "id": "patates", "ad": "Patates Kızartması", "aciklama": "Büyük boy", "fiyat": 100, "gorsel": "urunler/patates-kizartmasi.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "ayran", "ad": "Ayran", "aciklama": "20 cl", "fiyat": 30, "gorsel": "urunler/ayran.jpg" },
+      { "id": "kutu-icecek", "ad": "Kutu İçecek", "aciklama": "33 cl", "fiyat": 60, "gorsel": "urunler/kutu-icecek.jpg", "secenekGruplari": ["kutu-icecek"] },
+      { "id": "salgam", "ad": "Şalgam Suyu", "aciklama": "30 cl", "fiyat": 45, "gorsel": "urunler/salgam.jpg" }
+    ] }
+  ]
+}

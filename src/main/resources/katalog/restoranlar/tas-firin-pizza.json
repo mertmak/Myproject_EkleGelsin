@@ -1,0 +1,54 @@
+{
+  "id": "tas-firin-pizza",
+  "ad": "Taş Fırın Pizza Atölyesi",
+  "kategori": "pizza",
+  "tanitim": "48 saat mayalanan hamur, 450 °C taş fırında 90 saniyede Napoli usulü pizza.",
+  "logo": "logolar/tas-firin-pizza.png",
+  "kapak": "kapaklar/tas-firin-pizza.jpg",
+  "puan": 4.8,
+  "teslimatSuresi": { "enAz": 30, "enCok": 45 },
+  "minimumSepet": 300,
+  "teslimatUcreti": 29.90,
+  "calismaSaatleri": { "acilis": "12:00", "kapanis": "23:30" },
+  "secenekGruplari": [
+    { "id": "boy", "ad": "Boy", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kisilik-1", "ad": "Tek kişilik (28 cm)" },
+      { "id": "paylasimlik", "ad": "Paylaşımlık (36 cm)", "ekFiyat": 170 }
+    ] },
+    { "id": "ekstra", "ad": "Ekstra malzeme", "enAz": 0, "enCok": 4, "secenekler": [
+      { "id": "burrata", "ad": "Burrata", "ekFiyat": 140 },
+      { "id": "mozzarella", "ad": "Ekstra mozzarella", "ekFiyat": 60 },
+      { "id": "mantar", "ad": "Mantar", "ekFiyat": 40 },
+      { "id": "zeytin", "ad": "Siyah zeytin", "ekFiyat": 35 },
+      { "id": "roka", "ad": "Roka", "ekFiyat": 25 },
+      { "id": "acili-yag", "ad": "Acılı zeytinyağı" }
+    ] },
+    { "id": "icecek", "ad": "İçecek", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kola", "ad": "Kola" },
+      { "id": "kola-sekersiz", "ad": "Kola Şekersiz" },
+      { "id": "maden-suyu", "ad": "Limonlu maden suyu" }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Başlangıçlar", "urunler": [
+      { "id": "sarimsakli-ekmek", "ad": "Sarımsaklı Fırın Ekmeği", "aciklama": "Pizza hamurundan, sarımsaklı tereyağı ve maydanozla", "fiyat": 150, "gorsel": "urunler/sarimsakli-ekmek.jpg" },
+      { "id": "sezar", "ad": "Sezar Salata", "aciklama": "Marul, ızgara tavuk, parmesan, kruton, sezar sos", "fiyat": 290, "gorsel": "urunler/sezar-salata.jpg" }
+    ] },
+    { "ad": "Pizzalar", "urunler": [
+      { "id": "margherita", "ad": "Margherita", "aciklama": "San Marzano domates, fior di latte, fesleğen, zeytinyağı", "fiyat": 340, "gorsel": "urunler/pizza-margherita.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "marinara", "ad": "Marinara", "aciklama": "Domates, sarımsak, kekik, zeytinyağı (peynirsiz, vegan)", "fiyat": 290, "gorsel": "urunler/pizza-marinara.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "diavola", "ad": "Diavola", "aciklama": "Domates, mozzarella, acılı dana salam, pul biber", "fiyat": 410, "gorsel": "urunler/pizza-pepperoni.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "quattro-formaggi", "ad": "Quattro Formaggi", "aciklama": "Mozzarella, gorgonzola, parmesan, kaşar", "fiyat": 430, "gorsel": "urunler/pizza-dort-peynir.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "funghi", "ad": "Funghi", "aciklama": "Domates, mozzarella, kültür ve istiridye mantarı, kekik", "fiyat": 380, "gorsel": "urunler/pizza-mantar.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "ortolana", "ad": "Ortolana", "aciklama": "Közlenmiş patlıcan, kabak, kırmızı biber, mozzarella", "fiyat": 370, "gorsel": "urunler/pizza-sebze.jpg", "secenekGruplari": ["boy", "ekstra"] },
+      { "id": "rucola", "ad": "Roka & Füme Dana", "aciklama": "Mozzarella, füme dana jambon, roka, parmesan rendesi", "fiyat": 460, "gorsel": "urunler/pizza-roka.jpg", "secenekGruplari": ["boy", "ekstra"] }
+    ] },
+    { "ad": "Tatlılar", "urunler": [
+      { "id": "tiramisu", "ad": "Tiramisu", "aciklama": "Mascarpone, espresso, kakao", "fiyat": 230, "gorsel": "urunler/tiramisu.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "limonata", "ad": "Limonata", "aciklama": "Ev yapımı, 40 cl", "fiyat": 95, "gorsel": "urunler/limonata.jpg" },
+      { "id": "kutu-icecek", "ad": "Kutu İçecek", "aciklama": "33 cl", "fiyat": 75, "gorsel": "urunler/kutu-icecek.jpg", "secenekGruplari": ["icecek"] }
+    ] }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "dilim-pizza",
+  "ad": "Dilim Pizza",
+  "kategori": "pizza",
+  "tanitim": "New York usulü kocaman dilimler. Gece geç saate kadar açık.",
+  "logo": "logolar/dilim-pizza.png",
+  "kapak": "kapaklar/dilim-pizza.jpg",
+  "puan": 4.2,
+  "teslimatSuresi": { "enAz": 20, "enCok": 30 },
+  "minimumSepet": 180,
+  "teslimatUcreti": 14.90,
+  "calismaSaatleri": { "acilis": "12:00", "kapanis": "04:00" },
+  "secenekGruplari": [
+    { "id": "adet", "ad": "Dilim sayısı", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "dilim-1", "ad": "1 dilim" },
+      { "id": "dilim-2", "ad": "2 dilim", "ekFiyat": 120 },
+      { "id": "butun", "ad": "Bütün pizza (8 dilim)", "ekFiyat": 640 }
+    ] },
+    { "id": "sos", "ad": "Yanına sos", "enAz": 0, "enCok": 2, "secenekler": [
+      { "id": "ranch", "ad": "Ranch", "ekFiyat": 15 },
+      { "id": "aci", "ad": "Acı sos", "ekFiyat": 15 },
+      { "id": "sarimsakli", "ad": "Sarımsaklı", "ekFiyat": 15 }
+    ] },
+    { "id": "kutu-icecek", "ad": "İçecek", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kola", "ad": "Kola" },
+      { "id": "kola-sekersiz", "ad": "Kola Şekersiz" },
+      { "id": "ice-tea", "ad": "Limonlu soğuk çay" }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Dilimler", "urunler": [
+      { "id": "margherita", "ad": "Margherita Dilim", "aciklama": "Domates sosu, mozzarella, fesleğen", "fiyat": 140, "gorsel": "urunler/pizza-dilim.jpg", "secenekGruplari": ["adet", "sos"] },
+      { "id": "pepperoni", "ad": "Dana Pepperoni Dilim", "aciklama": "Bol dana pepperoni, mozzarella", "fiyat": 165, "gorsel": "urunler/pizza-pepperoni.jpg", "secenekGruplari": ["adet", "sos"] },
+      { "id": "karisik", "ad": "Karışık Dilim", "aciklama": "Sucuk, salam, mantar, biber, zeytin", "fiyat": 160, "gorsel": "urunler/pizza-karisik.jpg", "secenekGruplari": ["adet", "sos"] },
+      { "id": "beyaz", "ad": "Beyaz Pizza Dilim", "aciklama": "Ricotta, mozzarella, sarımsak, domates sossuz", "fiyat": 155, "gorsel": "urunler/pizza-dort-peynir.jpg", "secenekGruplari": ["adet", "sos"] },
+      { "id": "tavuklu", "ad": "Acılı Tavuk Dilim", "aciklama": "Buffalo soslu tavuk, jalapeno, mozzarella", "fiyat": 165, "gorsel": "urunler/pizza-tavuk.jpg", "secenekGruplari": ["adet", "sos"] }
+    ] },
+    { "ad": "Fırından", "urunler": [
+      { "id": "calzone", "ad": "Calzone", "aciklama": "Kapalı pizza: ricotta, mozzarella, dana salam, mantar", "fiyat": 310, "gorsel": "urunler/calzone.jpg", "secenekGruplari": ["sos"] },
+      { "id": "sarimsakli-ekmek", "ad": "Peynirli Sarımsaklı Ekmek", "aciklama": "6 parça, mozzarella ile", "fiyat": 135, "gorsel": "urunler/sarimsakli-ekmek.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "kutu-icecek", "ad": "Kutu İçecek", "aciklama": "33 cl", "fiyat": 60, "gorsel": "urunler/kutu-icecek.jpg", "secenekGruplari": ["kutu-icecek"] },
+      { "id": "su", "ad": "Su", "aciklama": "50 cl", "fiyat": 20, "gorsel": "urunler/su.jpg" }
+    ] }
+  ]
+}

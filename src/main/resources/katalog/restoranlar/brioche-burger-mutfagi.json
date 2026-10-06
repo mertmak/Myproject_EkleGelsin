@@ -1,0 +1,53 @@
+{
+  "id": "brioche-burger-mutfagi",
+  "ad": "Brioche Burger Mutfağı",
+  "kategori": "burger",
+  "tanitim": "Kendi fırınımızda pişen brioche ekmek, 21 gün dinlendirilmiş et, gurme soslar.",
+  "logo": "logolar/brioche-burger-mutfagi.png",
+  "kapak": "kapaklar/brioche-burger-mutfagi.jpg",
+  "puan": 4.7,
+  "teslimatSuresi": { "enAz": 35, "enCok": 50 },
+  "minimumSepet": 450,
+  "teslimatUcreti": 34.90,
+  "calismaSaatleri": { "acilis": "12:00", "kapanis": "23:30" },
+  "secenekGruplari": [
+    { "id": "pisirme", "ad": "Pişirme", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "az", "ad": "Az pişmiş" },
+      { "id": "orta", "ad": "Orta" },
+      { "id": "iyi", "ad": "İyi pişmiş" }
+    ] },
+    { "id": "yaninda", "ad": "Yanında", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "patates", "ad": "Parmak patates" },
+      { "id": "tatli-patates", "ad": "Tatlı patates", "ekFiyat": 40 },
+      { "id": "truf-patates", "ad": "Trüflü parmesanlı patates", "ekFiyat": 70 },
+      { "id": "salata", "ad": "Yeşil salata" }
+    ] },
+    { "id": "ekstra", "ad": "Ekstralar", "enAz": 0, "enCok": 3, "secenekler": [
+      { "id": "ekstra-kofte", "ad": "Ekstra köfte (150 g)", "ekFiyat": 220 },
+      { "id": "fume-kaburga", "ad": "Füme dana kaburga", "ekFiyat": 120 },
+      { "id": "avokado", "ad": "Avokado", "ekFiyat": 60 },
+      { "id": "yumurta", "ad": "Göz yumurta", "ekFiyat": 35 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "İmza Burgerler", "urunler": [
+      { "id": "truflu", "ad": "Trüflü Burger", "aciklama": "150 g dry-aged köfte, trüf mayonez, gruyère, roka", "fiyat": 690, "gorsel": "urunler/burger-gurme.jpg", "secenekGruplari": ["pisirme", "yaninda", "ekstra"] },
+      { "id": "karamelize", "ad": "Karamelize Soğanlı", "aciklama": "150 g köfte, 6 saat karamelize edilmiş soğan, cheddar, hardal", "fiyat": 620, "gorsel": "urunler/burger-klasik.jpg", "secenekGruplari": ["pisirme", "yaninda", "ekstra"] },
+      { "id": "kaburga", "ad": "Füme Kaburga Burger", "aciklama": "150 g köfte, 12 saat füme dana kaburga, barbekü sos, turşu soğan", "fiyat": 740, "gorsel": "urunler/burger-bbq.jpg", "secenekGruplari": ["pisirme", "yaninda", "ekstra"] },
+      { "id": "kuzu", "ad": "Kuzu Burger", "aciklama": "150 g kuzu köfte, köz patlıcan, keçi peyniri, nane yoğurt", "fiyat": 710, "gorsel": "urunler/burger-double.jpg", "secenekGruplari": ["pisirme", "yaninda"] },
+      { "id": "cheddar-melt", "ad": "Cheddar Melt", "aciklama": "150 g köfte, akışkan cheddar sos, çıtır soğan", "fiyat": 640, "gorsel": "urunler/cheeseburger.jpg", "secenekGruplari": ["pisirme", "yaninda", "ekstra"] }
+    ] },
+    { "ad": "Yan Ürünler", "urunler": [
+      { "id": "truf-patates", "ad": "Trüflü Patates", "aciklama": "Parmesan, trüf yağı, maydanoz", "fiyat": 210, "gorsel": "urunler/truflu-patates.jpg" },
+      { "id": "tatli-patates", "ad": "Tatlı Patates Kızartması", "aciklama": "Chipotle mayonez ile", "fiyat": 180, "gorsel": "urunler/tatli-patates.jpg" },
+      { "id": "mac-cheese", "ad": "Mac & Cheese", "aciklama": "Üç peynirli, çıtır ekmek kırıntısı", "fiyat": 220, "gorsel": "urunler/mac-cheese.jpg" }
+    ] },
+    { "ad": "Tatlılar", "urunler": [
+      { "id": "brownie", "ad": "Sıcak Brownie", "aciklama": "Vanilyalı dondurma ile", "fiyat": 220, "gorsel": "urunler/brownie.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "milkshake", "ad": "Tuzlu Karamelli Milkshake", "aciklama": "40 cl", "fiyat": 210, "gorsel": "urunler/milkshake.jpg" },
+      { "id": "limonata", "ad": "Zencefilli Limonata", "aciklama": "40 cl", "fiyat": 110, "gorsel": "urunler/limonata.jpg" }
+    ] }
+  ]
+}

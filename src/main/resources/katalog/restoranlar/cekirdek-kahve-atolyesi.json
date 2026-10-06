@@ -1,0 +1,55 @@
+{
+  "id": "cekirdek-kahve-atolyesi",
+  "ad": "Çekirdek Kahve Atölyesi",
+  "kategori": "kahve",
+  "tanitim": "Haftalık kavrulan tek orijinli çekirdekler, özenle demlenen kahveler.",
+  "logo": "logolar/cekirdek-kahve-atolyesi.png",
+  "kapak": "kapaklar/cekirdek-kahve-atolyesi.jpg",
+  "puan": 4.8,
+  "teslimatSuresi": { "enAz": 15, "enCok": 25 },
+  "minimumSepet": 200,
+  "teslimatUcreti": 19.90,
+  "calismaSaatleri": { "acilis": "07:30", "kapanis": "21:00" },
+  "secenekGruplari": [
+    { "id": "boy", "ad": "Boy", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kucuk", "ad": "Küçük (240 ml)" },
+      { "id": "orta", "ad": "Orta (350 ml)", "ekFiyat": 25 },
+      { "id": "buyuk", "ad": "Büyük (470 ml)", "ekFiyat": 45 }
+    ] },
+    { "id": "sut", "ad": "Süt", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "inek", "ad": "İnek sütü" },
+      { "id": "laktozsuz", "ad": "Laktozsuz" },
+      { "id": "yulaf", "ad": "Yulaf sütü", "ekFiyat": 30 },
+      { "id": "badem", "ad": "Badem sütü", "ekFiyat": 30 }
+    ] },
+    { "id": "shot", "ad": "Ekstra", "enAz": 0, "enCok": 2, "secenekler": [
+      { "id": "ekstra-shot", "ad": "Ekstra shot", "ekFiyat": 35 },
+      { "id": "kafeinsiz", "ad": "Kafeinsiz" }
+    ] },
+    { "id": "filtre-cekirdek", "ad": "Çekirdek", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "etiyopya", "ad": "Etiyopya Yirgacheffe" },
+      { "id": "kolombiya", "ad": "Kolombiya Huila" },
+      { "id": "kenya", "ad": "Kenya AA", "ekFiyat": 20 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Espresso Bazlı", "urunler": [
+      { "id": "espresso", "ad": "Espresso", "aciklama": "Çift shot, günün harmanı", "fiyat": 110, "gorsel": "urunler/espresso.jpg", "secenekGruplari": ["shot"] },
+      { "id": "americano", "ad": "Americano", "aciklama": "Çift shot espresso, sıcak su", "fiyat": 140, "gorsel": "urunler/americano.jpg", "secenekGruplari": ["boy", "shot"] },
+      { "id": "cortado", "ad": "Cortado", "aciklama": "Eşit oranda espresso ve sıcak süt", "fiyat": 150, "gorsel": "urunler/cortado.jpg", "secenekGruplari": ["sut", "shot"] },
+      { "id": "flat-white", "ad": "Flat White", "aciklama": "Ristretto, ipeksi süt köpüğü", "fiyat": 175, "gorsel": "urunler/flat-white.jpg", "secenekGruplari": ["sut", "shot"] },
+      { "id": "cappuccino", "ad": "Cappuccino", "aciklama": "Espresso, bol süt köpüğü", "fiyat": 165, "gorsel": "urunler/cappuccino.jpg", "secenekGruplari": ["boy", "sut", "shot"] },
+      { "id": "latte", "ad": "Caffè Latte", "aciklama": "Espresso, buharlanmış süt", "fiyat": 170, "gorsel": "urunler/latte.jpg", "secenekGruplari": ["boy", "sut", "shot"] }
+    ] },
+    { "ad": "Demleme", "urunler": [
+      { "id": "v60", "ad": "V60 Filtre Kahve", "aciklama": "Elle demleme, 300 ml", "fiyat": 165, "gorsel": "urunler/filtre-kahve.jpg", "secenekGruplari": ["filtre-cekirdek"] },
+      { "id": "cold-brew", "ad": "Cold Brew", "aciklama": "18 saat soğuk demleme, buzlu", "fiyat": 185, "gorsel": "urunler/cold-brew.jpg", "secenekGruplari": ["boy"] },
+      { "id": "iced-latte", "ad": "Iced Latte", "aciklama": "Espresso, soğuk süt, buz", "fiyat": 190, "gorsel": "urunler/iced-latte.jpg", "secenekGruplari": ["boy", "sut", "shot"] }
+    ] },
+    { "ad": "Fırından", "urunler": [
+      { "id": "kruvasan", "ad": "Tereyağlı Kruvasan", "aciklama": "Fransız tereyağı, günlük", "fiyat": 150, "gorsel": "urunler/kruvasan.jpg" },
+      { "id": "kurabiye", "ad": "Çikolata Parçacıklı Kurabiye", "aciklama": "Deniz tuzlu", "fiyat": 95, "gorsel": "urunler/kurabiye.jpg" },
+      { "id": "cinnamon-roll", "ad": "Tarçınlı Çörek", "aciklama": "Krem peynir glazürlü", "fiyat": 160, "gorsel": "urunler/tarcinli-corek.jpg" }
+    ] }
+  ]
+}

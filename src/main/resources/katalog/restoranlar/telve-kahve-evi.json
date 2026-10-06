@@ -1,0 +1,49 @@
+{
+  "id": "telve-kahve-evi",
+  "ad": "Telve Kahve Evi",
+  "kategori": "kahve",
+  "tanitim": "Közde, bakır cezvede pişen Türk kahvesi ve geleneksel ikramlar.",
+  "logo": "logolar/telve-kahve-evi.png",
+  "kapak": "kapaklar/telve-kahve-evi.jpg",
+  "puan": 4.6,
+  "teslimatSuresi": { "enAz": 20, "enCok": 30 },
+  "minimumSepet": 150,
+  "teslimatUcreti": 14.90,
+  "calismaSaatleri": { "acilis": "09:00", "kapanis": "01:00" },
+  "secenekGruplari": [
+    { "id": "seker", "ad": "Şeker", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "sade", "ad": "Sade" },
+      { "id": "az-sekerli", "ad": "Az şekerli" },
+      { "id": "orta", "ad": "Orta" },
+      { "id": "sekerli", "ad": "Şekerli" }
+    ] },
+    { "id": "fincan", "ad": "Fincan", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "tek", "ad": "Tek" },
+      { "id": "duble", "ad": "Duble", "ekFiyat": 55 }
+    ] },
+    { "id": "lokum-cesit", "ad": "Çeşit", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "gul", "ad": "Gül" },
+      { "id": "fistikli", "ad": "Fıstıklı", "ekFiyat": 40 },
+      { "id": "karisik", "ad": "Karışık", "ekFiyat": 20 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Türk Kahveleri", "urunler": [
+      { "id": "turk-kahvesi", "ad": "Közde Türk Kahvesi", "aciklama": "Bakır cezvede, lokum ve su ile", "fiyat": 115, "gorsel": "urunler/turk-kahvesi.jpg", "secenekGruplari": ["seker", "fincan"] },
+      { "id": "damla-sakizli", "ad": "Damla Sakızlı Türk Kahvesi", "aciklama": "Sakız aromalı", "fiyat": 130, "gorsel": "urunler/turk-kahvesi.jpg", "secenekGruplari": ["seker", "fincan"] },
+      { "id": "sutlu", "ad": "Sütlü Türk Kahvesi", "aciklama": "Suyu yerine sütle pişirilir", "fiyat": 130, "gorsel": "urunler/turk-kahvesi.jpg", "secenekGruplari": ["seker", "fincan"] },
+      { "id": "menengic", "ad": "Menengiç Kahvesi", "aciklama": "Kafeinsiz, yabani fıstıktan, sütlü", "fiyat": 125, "gorsel": "urunler/menengic.jpg", "secenekGruplari": ["seker"] },
+      { "id": "dibek", "ad": "Dibek Kahvesi", "aciklama": "Taş dibekte dövülmüş, yumuşak içim", "fiyat": 125, "gorsel": "urunler/dibek-kahvesi.jpg", "secenekGruplari": ["seker", "fincan"] }
+    ] },
+    { "ad": "Sıcak İçecekler", "urunler": [
+      { "id": "cay", "ad": "Demlik Çay", "aciklama": "2 kişilik, ince belli bardaklarla", "fiyat": 70, "gorsel": "urunler/cay.jpg" },
+      { "id": "salep", "ad": "Salep", "aciklama": "Tarçınlı, 30 cl", "fiyat": 150, "gorsel": "urunler/salep.jpg" },
+      { "id": "ihlamur", "ad": "Ihlamur", "aciklama": "Ballı ve limonlu", "fiyat": 90, "gorsel": "urunler/ihlamur.jpg" }
+    ] },
+    { "ad": "Yanına", "urunler": [
+      { "id": "lokum", "ad": "Lokum", "aciklama": "8 adet", "fiyat": 140, "gorsel": "urunler/lokum.jpg", "secenekGruplari": ["lokum-cesit"] },
+      { "id": "simit", "ad": "Simit", "aciklama": "Taze, susamlı", "fiyat": 35, "gorsel": "urunler/simit.jpg" },
+      { "id": "kunefe", "ad": "Künefe", "aciklama": "Tek kişilik, sıcak", "fiyat": 270, "gorsel": "urunler/kunefe.jpg" }
+    ] }
+  ]
+}

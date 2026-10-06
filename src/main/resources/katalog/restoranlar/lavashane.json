@@ -1,0 +1,52 @@
+{
+  "id": "lavashane",
+  "ad": "Lavaşhane",
+  "kategori": "doner",
+  "tanitim": "Sacda pişen ince lavaşa sarılmış dürümler; tavuktan falafele.",
+  "logo": "logolar/lavashane.png",
+  "kapak": "kapaklar/lavashane.jpg",
+  "puan": 4.4,
+  "teslimatSuresi": { "enAz": 20, "enCok": 30 },
+  "minimumSepet": 200,
+  "teslimatUcreti": 19.90,
+  "calismaSaatleri": { "acilis": "11:00", "kapanis": "03:00" },
+  "secenekGruplari": [
+    { "id": "boy", "ad": "Boy", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "normal", "ad": "Normal" },
+      { "id": "buyuk", "ad": "Büyük (+%50 iç)", "ekFiyat": 90 }
+    ] },
+    { "id": "sos", "ad": "Sos", "enAz": 0, "enCok": 2, "secenekler": [
+      { "id": "sarimsakli", "ad": "Sarımsaklı mayonez" },
+      { "id": "aci", "ad": "Acı sos" },
+      { "id": "barbeku", "ad": "Barbekü" },
+      { "id": "tahin", "ad": "Tahin sos" }
+    ] },
+    { "id": "menu-yap", "ad": "Menü yap", "enAz": 0, "enCok": 1, "secenekler": [
+      { "id": "menu", "ad": "Patates + ayran", "ekFiyat": 120 }
+    ] },
+    { "id": "kutu-icecek", "ad": "İçecek", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kola", "ad": "Kola" },
+      { "id": "kola-sekersiz", "ad": "Kola Şekersiz" },
+      { "id": "gazoz", "ad": "Gazoz" }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Dürümler", "urunler": [
+      { "id": "tavuk-durum", "ad": "Klasik Tavuk Dürüm", "aciklama": "Tavuk döner, marul, domates, turşu, patates", "fiyat": 230, "gorsel": "urunler/doner-durum-tavuk.jpg", "secenekGruplari": ["boy", "sos", "menu-yap"] },
+      { "id": "acili-tavuk-durum", "ad": "Acılı Tavuk Dürüm", "aciklama": "Pul biberli tavuk döner, közlenmiş biber, acı sos", "fiyat": 245, "gorsel": "urunler/doner-durum-tavuk.jpg", "secenekGruplari": ["boy", "menu-yap"] },
+      { "id": "kasarli-et-durum", "ad": "Kaşarlı Et Dürüm", "aciklama": "Dana döner, eritilmiş kaşar, domates, sumaklı soğan", "fiyat": 450, "gorsel": "urunler/doner-durum-et.jpg", "secenekGruplari": ["boy", "sos", "menu-yap"] },
+      { "id": "tantuni", "ad": "Tantuni Dürüm", "aciklama": "Sacda pamuk yağıyla pişmiş dana, domates, maydanoz, limon", "fiyat": 280, "gorsel": "urunler/tantuni.jpg", "secenekGruplari": ["boy", "menu-yap"] },
+      { "id": "falafel-durum", "ad": "Falafel Dürüm", "aciklama": "Nohut köftesi, humus, turşu, roka, tahin sos (vejetaryen)", "fiyat": 220, "gorsel": "urunler/falafel-durum.jpg", "secenekGruplari": ["boy", "sos", "menu-yap"] },
+      { "id": "kofte-durum", "ad": "Izgara Köfte Dürüm", "aciklama": "4 adet kasap köfte, piyaz, közlenmiş domates", "fiyat": 360, "gorsel": "urunler/kofte-durum.jpg", "secenekGruplari": ["boy", "menu-yap"] }
+    ] },
+    { "ad": "Atıştırmalıklar", "urunler": [
+      { "id": "patates", "ad": "Baharatlı Patates", "aciklama": "Kekik ve tatlı toz biberli", "fiyat": 115, "gorsel": "urunler/patates-kizartmasi.jpg" },
+      { "id": "sogan-halkasi", "ad": "Soğan Halkası", "aciklama": "8 adet, ranch sos ile", "fiyat": 130, "gorsel": "urunler/sogan-halkasi.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "ayran", "ad": "Ayran", "aciklama": "30 cl", "fiyat": 40, "gorsel": "urunler/ayran.jpg" },
+      { "id": "limonata", "ad": "Ev Yapımı Limonata", "aciklama": "Taze nane ile, 40 cl", "fiyat": 90, "gorsel": "urunler/limonata.jpg" },
+      { "id": "kutu-icecek", "ad": "Kutu İçecek", "aciklama": "33 cl", "fiyat": 65, "gorsel": "urunler/kutu-icecek.jpg", "secenekGruplari": ["kutu-icecek"] }
+    ] }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "mozzarella-sokagi",
+  "ad": "Mozzarella Sokağı",
+  "kategori": "pizza",
+  "tanitim": "Ekşi mayalı hamur ve yerel üreticilerden peynirlerle gurme pizzalar.",
+  "logo": "logolar/mozzarella-sokagi.png",
+  "kapak": "kapaklar/mozzarella-sokagi.jpg",
+  "puan": 4.6,
+  "teslimatSuresi": { "enAz": 35, "enCok": 50 },
+  "minimumSepet": 400,
+  "teslimatUcreti": 34.90,
+  "calismaSaatleri": { "acilis": "12:00", "kapanis": "23:00" },
+  "secenekGruplari": [
+    { "id": "hamur", "ad": "Hamur", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "eksi-maya", "ad": "Ekşi mayalı" },
+      { "id": "tam-bugday", "ad": "Tam buğday", "ekFiyat": 30 },
+      { "id": "glutensiz", "ad": "Glutensiz", "ekFiyat": 70 }
+    ] },
+    { "id": "ekstra", "ad": "Ekstra", "enAz": 0, "enCok": 3, "secenekler": [
+      { "id": "burrata", "ad": "Burrata", "ekFiyat": 150 },
+      { "id": "truf-yagi", "ad": "Trüf yağı", "ekFiyat": 60 },
+      { "id": "parmesan", "ad": "Parmesan rendesi", "ekFiyat": 45 },
+      { "id": "acili-bal", "ad": "Acılı bal", "ekFiyat": 35 }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Başlangıçlar", "urunler": [
+      { "id": "bruschetta", "ad": "Bruschetta", "aciklama": "Ekşi maya ekmek, çeri domates, fesleğen, sarımsak (3 adet)", "fiyat": 210, "gorsel": "urunler/bruschetta.jpg" },
+      { "id": "burrata-salata", "ad": "Burrata Salata", "aciklama": "Burrata, renkli domatesler, pesto, roka", "fiyat": 390, "gorsel": "urunler/burrata-salata.jpg" }
+    ] },
+    { "ad": "Gurme Pizzalar", "urunler": [
+      { "id": "burrata-margherita", "ad": "Burrata Margherita", "aciklama": "Domates sosu, fior di latte, bütün burrata, fesleğen", "fiyat": 560, "gorsel": "urunler/pizza-burrata.jpg", "secenekGruplari": ["hamur", "ekstra"] },
+      { "id": "truflu-mantar", "ad": "Trüflü Mantar", "aciklama": "Krema sos, karışık orman mantarları, trüf yağı, parmesan", "fiyat": 590, "gorsel": "urunler/pizza-mantar.jpg", "secenekGruplari": ["hamur", "ekstra"] },
+      { "id": "pesto-tavuk", "ad": "Pesto Tavuk", "aciklama": "Fesleğen pesto, ızgara tavuk, kurutulmuş domates, mozzarella", "fiyat": 520, "gorsel": "urunler/pizza-pesto.jpg", "secenekGruplari": ["hamur", "ekstra"] },
+      { "id": "pastirmali", "ad": "Pastırmalı Kayseri", "aciklama": "Kayseri pastırması, çemen, mozzarella, roka", "fiyat": 610, "gorsel": "urunler/pizza-roka.jpg", "secenekGruplari": ["hamur", "ekstra"] },
+      { "id": "acili-balli", "ad": "Acılı Bal & Sucuk", "aciklama": "Fermente sucuk, mozzarella, acılı bal", "fiyat": 540, "gorsel": "urunler/pizza-pepperoni.jpg", "secenekGruplari": ["hamur", "ekstra"] },
+      { "id": "keci-peyniri", "ad": "Keçi Peyniri & İncir", "aciklama": "Keçi peyniri, kuru incir, karamelize soğan, ceviz", "fiyat": 570, "gorsel": "urunler/pizza-keci-peyniri.jpg", "secenekGruplari": ["hamur", "ekstra"] }
+    ] },
+    { "ad": "Tatlılar", "urunler": [
+      { "id": "tiramisu", "ad": "Tiramisu", "aciklama": "Kavanozda, mascarpone ve espresso", "fiyat": 260, "gorsel": "urunler/tiramisu.jpg" },
+      { "id": "panna-cotta", "ad": "Panna Cotta", "aciklama": "Vanilya, orman meyveli sos", "fiyat": 230, "gorsel": "urunler/panna-cotta.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "limonata", "ad": "Fesleğenli Limonata", "aciklama": "Ev yapımı, 40 cl", "fiyat": 110, "gorsel": "urunler/limonata.jpg" },
+      { "id": "soguk-cay", "ad": "Ev Yapımı Soğuk Çay", "aciklama": "Şeftalili, 40 cl", "fiyat": 100, "gorsel": "urunler/soguk-cay.jpg" }
+    ] }
+  ]
+}

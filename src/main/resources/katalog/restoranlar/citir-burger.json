@@ -1,0 +1,56 @@
+{
+  "id": "citir-burger",
+  "ad": "Çıtır Burger & Tavuk",
+  "kategori": "burger",
+  "tanitim": "Ayranlı marine, iki kez unlanmış çıtır tavuk burgerler ve kanatlar.",
+  "logo": "logolar/citir-burger.png",
+  "kapak": "kapaklar/citir-burger.jpg",
+  "puan": 4.3,
+  "teslimatSuresi": { "enAz": 20, "enCok": 35 },
+  "minimumSepet": 200,
+  "teslimatUcreti": 0,
+  "calismaSaatleri": { "acilis": "11:00", "kapanis": "01:00" },
+  "secenekGruplari": [
+    { "id": "aci-seviyesi", "ad": "Acı seviyesi", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "acisiz", "ad": "Acısız" },
+      { "id": "orta-aci", "ad": "Orta acı" },
+      { "id": "cok-aci", "ad": "Çok acı" }
+    ] },
+    { "id": "menu-yap", "ad": "Menü", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "sadece", "ad": "Sadece ürün" },
+      { "id": "menu", "ad": "Menü: patates + kutu içecek", "ekFiyat": 150 }
+    ] },
+    { "id": "sos", "ad": "Sos", "enAz": 0, "enCok": 2, "secenekler": [
+      { "id": "balli-hardal", "ad": "Ballı hardal" },
+      { "id": "ranch", "ad": "Ranch" },
+      { "id": "barbeku", "ad": "Barbekü" },
+      { "id": "buffalo", "ad": "Buffalo" }
+    ] },
+    { "id": "kutu-icecek", "ad": "İçecek", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kola", "ad": "Kola" },
+      { "id": "kola-sekersiz", "ad": "Kola Şekersiz" },
+      { "id": "ice-tea", "ad": "Şeftalili soğuk çay" }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Burgerler", "urunler": [
+      { "id": "citir-tavuk-burger", "ad": "Çıtır Tavuk Burger", "aciklama": "Çıtır tavuk göğsü, coleslaw, turşu, mayonez", "fiyat": 310, "gorsel": "urunler/burger-tavuk.jpg", "secenekGruplari": ["aci-seviyesi", "menu-yap"] },
+      { "id": "nashville", "ad": "Nashville Acılı Burger", "aciklama": "Acı yağa batırılmış çıtır tavuk, turşu, lahana", "fiyat": 340, "gorsel": "urunler/burger-tavuk.jpg", "secenekGruplari": ["menu-yap"] },
+      { "id": "cheddarli", "ad": "Cheddarlı Çıtır Burger", "aciklama": "Çıtır tavuk, cheddar, jalapeno, ranch", "fiyat": 350, "gorsel": "urunler/burger-tavuk.jpg", "secenekGruplari": ["aci-seviyesi", "menu-yap"] }
+    ] },
+    { "ad": "Kovalar", "urunler": [
+      { "id": "kanat", "ad": "Tavuk Kanat", "aciklama": "8 adet, seçtiğin sosla", "fiyat": 340, "gorsel": "urunler/tavuk-kanat.jpg", "secenekGruplari": ["aci-seviyesi", "sos"] },
+      { "id": "strips", "ad": "Tavuk Strips", "aciklama": "5 adet bonfile şerit", "fiyat": 300, "gorsel": "urunler/tavuk-strips.jpg", "secenekGruplari": ["sos"] },
+      { "id": "nugget", "ad": "Nugget", "aciklama": "9 adet", "fiyat": 230, "gorsel": "urunler/citir-tavuk.jpg", "secenekGruplari": ["sos"] },
+      { "id": "aile-kovasi", "ad": "Aile Kovası", "aciklama": "8 kanat, 6 strips, 2 büyük patates, 1 L içecek", "fiyat": 890, "gorsel": "urunler/tavuk-kova.jpg", "secenekGruplari": ["aci-seviyesi", "sos"] }
+    ] },
+    { "ad": "Yan Ürünler", "urunler": [
+      { "id": "patates", "ad": "Cajun Patates", "aciklama": "Cajun baharatlı", "fiyat": 120, "gorsel": "urunler/patates-kizartmasi.jpg" },
+      { "id": "coleslaw", "ad": "Coleslaw", "aciklama": "Lahana, havuç, yoğurtlu sos", "fiyat": 90, "gorsel": "urunler/coleslaw.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "kutu-icecek", "ad": "Kutu İçecek", "aciklama": "33 cl", "fiyat": 65, "gorsel": "urunler/kutu-icecek.jpg", "secenekGruplari": ["kutu-icecek"] },
+      { "id": "limonata", "ad": "Limonata", "aciklama": "40 cl", "fiyat": 85, "gorsel": "urunler/limonata.jpg" }
+    ] }
+  ]
+}

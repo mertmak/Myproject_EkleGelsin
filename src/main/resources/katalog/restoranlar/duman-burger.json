@@ -1,0 +1,69 @@
+{
+  "id": "duman-burger",
+  "ad": "Duman Burger",
+  "kategori": "burger",
+  "tanitim": "Günlük çekilen dana kıyma, patates ekmeği ve közde dumanlanmış soslar.",
+  "logo": "logolar/duman-burger.png",
+  "kapak": "kapaklar/duman-burger.jpg",
+  "puan": 4.6,
+  "teslimatSuresi": { "enAz": 25, "enCok": 40 },
+  "minimumSepet": 300,
+  "teslimatUcreti": 24.90,
+  "calismaSaatleri": { "acilis": "11:30", "kapanis": "02:00" },
+  "secenekGruplari": [
+    { "id": "pisirme", "ad": "Pişirme", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "orta", "ad": "Orta" },
+      { "id": "orta-iyi", "ad": "Orta-iyi" },
+      { "id": "iyi", "ad": "İyi pişmiş" }
+    ] },
+    { "id": "menu-yap", "ad": "Menü", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "sadece-burger", "ad": "Sadece burger" },
+      { "id": "menu", "ad": "Menü: patates + kutu içecek", "ekFiyat": 170 },
+      { "id": "buyuk-menu", "ad": "Büyük menü: büyük patates + soğan halkası + içecek", "ekFiyat": 260 }
+    ] },
+    { "id": "ekstra", "ad": "Ekstralar", "enAz": 0, "enCok": 4, "secenekler": [
+      { "id": "ekstra-kofte", "ad": "Ekstra köfte (120 g)", "ekFiyat": 150 },
+      { "id": "cheddar", "ad": "Cheddar", "ekFiyat": 40 },
+      { "id": "fume-et", "ad": "Füme dana göğüs", "ekFiyat": 70 },
+      { "id": "karamelize-sogan", "ad": "Karamelize soğan", "ekFiyat": 35 },
+      { "id": "jalapeno", "ad": "Jalapeno", "ekFiyat": 25 }
+    ] },
+    { "id": "cikarilacak", "ad": "Çıkarılacaklar", "enAz": 0, "enCok": 4, "secenekler": [
+      { "id": "sogansiz", "ad": "Soğansız" },
+      { "id": "tursusuz", "ad": "Turşusuz" },
+      { "id": "domatessiz", "ad": "Domatessiz" },
+      { "id": "sossuz", "ad": "Sossuz" }
+    ] },
+    { "id": "milkshake-tat", "ad": "Tat", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "cikolata", "ad": "Çikolata" },
+      { "id": "vanilya", "ad": "Vanilya" },
+      { "id": "cilek", "ad": "Çilek" },
+      { "id": "karamel", "ad": "Tuzlu karamel" }
+    ] },
+    { "id": "kutu-icecek", "ad": "İçecek", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kola", "ad": "Kola" },
+      { "id": "kola-sekersiz", "ad": "Kola Şekersiz" },
+      { "id": "gazoz", "ad": "Gazoz" }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Burgerler", "urunler": [
+      { "id": "klasik", "ad": "Klasik Burger", "aciklama": "120 g dana köfte, marul, domates, turşu, soğan, Duman sos", "fiyat": 380, "gorsel": "urunler/burger-klasik.jpg", "secenekGruplari": ["pisirme", "menu-yap", "ekstra", "cikarilacak"] },
+      { "id": "cheeseburger", "ad": "Cheeseburger", "aciklama": "120 g dana köfte, çift cheddar, turşu, soğan, ketçap, hardal", "fiyat": 420, "gorsel": "urunler/cheeseburger.jpg", "secenekGruplari": ["pisirme", "menu-yap", "ekstra", "cikarilacak"] },
+      { "id": "double", "ad": "Double Cheese", "aciklama": "2 × 120 g dana köfte, çift cheddar, karamelize soğan", "fiyat": 560, "gorsel": "urunler/burger-double.jpg", "secenekGruplari": ["pisirme", "menu-yap", "ekstra", "cikarilacak"] },
+      { "id": "smash", "ad": "Smash Burger", "aciklama": "2 × 70 g ezme köfte, cheddar, ince soğan, burger sos", "fiyat": 450, "gorsel": "urunler/burger-smash.jpg", "secenekGruplari": ["menu-yap", "ekstra", "cikarilacak"] },
+      { "id": "barbeku", "ad": "Barbekü Burger", "aciklama": "120 g dana köfte, füme dana göğüs, soğan halkası, barbekü sos", "fiyat": 490, "gorsel": "urunler/burger-bbq.jpg", "secenekGruplari": ["pisirme", "menu-yap", "ekstra", "cikarilacak"] },
+      { "id": "mantarli", "ad": "Mantarlı Burger", "aciklama": "120 g dana köfte, sote mantar, İsviçre peyniri, trüf mayonez", "fiyat": 480, "gorsel": "urunler/burger-mantar.jpg", "secenekGruplari": ["pisirme", "menu-yap", "ekstra", "cikarilacak"] },
+      { "id": "tavuk", "ad": "Izgara Tavuk Burger", "aciklama": "Marine tavuk but, marul, domates, ballı hardal", "fiyat": 340, "gorsel": "urunler/burger-tavuk.jpg", "secenekGruplari": ["menu-yap", "cikarilacak"] },
+      { "id": "vejetaryen", "ad": "Vejetaryen Burger", "aciklama": "Nohut ve kinoa köftesi, avokado, közlenmiş biber", "fiyat": 390, "gorsel": "urunler/burger-vejetaryen.jpg", "secenekGruplari": ["menu-yap", "cikarilacak"] }
+    ] },
+    { "ad": "Yan Ürünler", "urunler": [
+      { "id": "patates", "ad": "Patates Kızartması", "aciklama": "Çift kızartılmış, deniz tuzu", "fiyat": 130, "gorsel": "urunler/patates-kizartmasi.jpg" },
+      { "id": "sogan-halkasi", "ad": "Soğan Halkası", "aciklama": "8 adet, barbekü sos ile", "fiyat": 140, "gorsel": "urunler/sogan-halkasi.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "milkshake", "ad": "Milkshake", "aciklama": "Maraş dondurmasıyla, 40 cl", "fiyat": 190, "gorsel": "urunler/milkshake.jpg", "secenekGruplari": ["milkshake-tat"] },
+      { "id": "kutu-icecek", "ad": "Kutu İçecek", "aciklama": "33 cl", "fiyat": 70, "gorsel": "urunler/kutu-icecek.jpg", "secenekGruplari": ["kutu-icecek"] }
+    ] }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "hamur-ve-ates",
+  "ad": "Hamur & Ateş",
+  "kategori": "pizza",
+  "tanitim": "Bol malzemeli, kalın kenarlı Türk usulü pizzalar. Kalabalık sofralar için.",
+  "logo": "logolar/hamur-ve-ates.png",
+  "kapak": "kapaklar/hamur-ve-ates.jpg",
+  "puan": 4.3,
+  "teslimatSuresi": { "enAz": 30, "enCok": 40 },
+  "minimumSepet": 250,
+  "teslimatUcreti": 19.90,
+  "calismaSaatleri": { "acilis": "11:00", "kapanis": "01:00" },
+  "secenekGruplari": [
+    { "id": "boy", "ad": "Boy", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kucuk", "ad": "Küçük (4 dilim)" },
+      { "id": "orta", "ad": "Orta (6 dilim)", "ekFiyat": 110 },
+      { "id": "buyuk", "ad": "Büyük (8 dilim)", "ekFiyat": 220 }
+    ] },
+    { "id": "hamur", "ad": "Hamur", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "klasik", "ad": "Klasik" },
+      { "id": "ince", "ad": "İncecik" },
+      { "id": "peynirli-kenar", "ad": "Kenarı peynir dolgulu", "ekFiyat": 60 }
+    ] },
+    { "id": "ekstra", "ad": "Ekstra malzeme", "enAz": 0, "enCok": 5, "secenekler": [
+      { "id": "sucuk", "ad": "Sucuk", "ekFiyat": 45 },
+      { "id": "kasar", "ad": "Ekstra kaşar", "ekFiyat": 40 },
+      { "id": "mantar", "ad": "Mantar", "ekFiyat": 30 },
+      { "id": "misir", "ad": "Mısır", "ekFiyat": 25 },
+      { "id": "jalapeno", "ad": "Jalapeno", "ekFiyat": 25 },
+      { "id": "zeytin", "ad": "Zeytin", "ekFiyat": 25 }
+    ] },
+    { "id": "kutu-icecek", "ad": "İçecek", "enAz": 1, "enCok": 1, "secenekler": [
+      { "id": "kola", "ad": "Kola" },
+      { "id": "kola-sekersiz", "ad": "Kola Şekersiz" },
+      { "id": "portakalli-gazoz", "ad": "Portakallı gazoz" }
+    ] }
+  ],
+  "menu": [
+    { "ad": "Pizzalar", "urunler": [
+      { "id": "karisik", "ad": "Karışık Pizza", "aciklama": "Sucuk, salam, sosis, mantar, biber, zeytin, mısır, kaşar", "fiyat": 330, "gorsel": "urunler/pizza-karisik.jpg", "secenekGruplari": ["boy", "hamur", "ekstra"] },
+      { "id": "sucuklu", "ad": "Sucuklu Pizza", "aciklama": "Kasap sucuk, kaşar, domates sosu", "fiyat": 320, "gorsel": "urunler/pizza-pepperoni.jpg", "secenekGruplari": ["boy", "hamur", "ekstra"] },
+      { "id": "ton-balikli", "ad": "Ton Balıklı Pizza", "aciklama": "Ton balığı, mısır, kırmızı soğan, kaşar", "fiyat": 340, "gorsel": "urunler/pizza-ton.jpg", "secenekGruplari": ["boy", "hamur", "ekstra"] },
+      { "id": "barbekulu-tavuk", "ad": "Barbekü Soslu Tavuk", "aciklama": "Izgara tavuk, barbekü sos, kırmızı soğan, kaşar", "fiyat": 335, "gorsel": "urunler/pizza-tavuk.jpg", "secenekGruplari": ["boy", "hamur", "ekstra"] },
+      { "id": "mantarli", "ad": "Mantarlı Pizza", "aciklama": "Bol mantar, kaşar, kekik", "fiyat": 290, "gorsel": "urunler/pizza-mantar.jpg", "secenekGruplari": ["boy", "hamur", "ekstra"] },
+      { "id": "sebzeli", "ad": "Sebzeli Pizza", "aciklama": "Biber, mantar, mısır, domates, zeytin, kaşar", "fiyat": 295, "gorsel": "urunler/pizza-sebze.jpg", "secenekGruplari": ["boy", "hamur", "ekstra"] },
+      { "id": "dort-peynirli", "ad": "Dört Peynirli", "aciklama": "Kaşar, mozzarella, rokfor, parmesan", "fiyat": 345, "gorsel": "urunler/pizza-dort-peynir.jpg", "secenekGruplari": ["boy", "hamur", "ekstra"] }
+    ] },
+    { "ad": "Yan Ürünler", "urunler": [
+      { "id": "citir-tavuk", "ad": "Çıtır Tavuk", "aciklama": "8 adet, ballı hardal sos ile", "fiyat": 190, "gorsel": "urunler/citir-tavuk.jpg" },
+      { "id": "patates", "ad": "Elma Dilim Patates", "aciklama": "Baharatlı", "fiyat": 120, "gorsel": "urunler/patates-kizartmasi.jpg" },
+      { "id": "sogan-halkasi", "ad": "Soğan Halkası", "aciklama": "8 adet", "fiyat": 125, "gorsel": "urunler/sogan-halkasi.jpg" }
+    ] },
+    { "ad": "İçecekler", "urunler": [
+      { "id": "kutu-icecek", "ad": "Kutu İçecek", "aciklama": "33 cl", "fiyat": 65, "gorsel": "urunler/kutu-icecek.jpg", "secenekGruplari": ["kutu-icecek"] },
+      { "id": "litrelik", "ad": "1 Litre Kola", "aciklama": "Pizza yanına paylaşımlık", "fiyat": 95, "gorsel": "urunler/kola-litre.jpg" },
+      { "id": "ayran", "ad": "Ayran", "aciklama": "30 cl", "fiyat": 40, "gorsel": "urunler/ayran.jpg" }
+    ] }
+  ]
+}

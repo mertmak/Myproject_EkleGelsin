@@ -1,0 +1,32 @@
+{
+  "kategoriler": [
+    { "id": "doner", "ad": "Döner", "gorsel": "kategoriler/doner.jpg" },
+    { "id": "pizza", "ad": "Pizza", "gorsel": "kategoriler/pizza.jpg" },
+    { "id": "burger", "ad": "Burger", "gorsel": "kategoriler/burger.jpg" },
+    { "id": "lahmacun-pide", "ad": "Lahmacun & Pide", "gorsel": "kategoriler/lahmacun-pide.jpg" },
+    { "id": "tatli", "ad": "Tatlı", "gorsel": "kategoriler/tatli.jpg" },
+    { "id": "kahve", "ad": "Kahve", "gorsel": "kategoriler/kahve.jpg" }
+  ],
+  "restoranlar": [
+    "kirk-yaprak-doner",
+    "odunbasi-doner",
+    "lavashane",
+    "tavuk-duragi",
+    "tas-firin-pizza",
+    "hamur-ve-ates",
+    "dilim-pizza",
+    "mozzarella-sokagi",
+    "duman-burger",
+    "citir-burger",
+    "brioche-burger-mutfagi",
+    "kozlu-ocak-lahmacun",
+    "karadeniz-pide-firini",
+    "incecik-lahmacun",
+    "serbetli-baklava-evi",
+    "kasik-muhallebicisi",
+    "tatli-dukkani",
+    "cekirdek-kahve-atolyesi",
+    "telve-kahve-evi",
+    "kopuk-kahve-bar"
+  ]
+}
